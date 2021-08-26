@@ -1,0 +1,30 @@
+#bground {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+      80deg,
+      #3fb78d,
+      #007f86 90%,
+      #b5e877,
+      #77d183 190%,
+      #5bc489 130%
+    );
+  }
+  
+  .card{
+      background-color:#ffffff95;
+      padding: 30px;
+      border-radius: 4%;
+      box-shadow: 3px 3px 1px 0px #00000070;
+      
+    }
+
+ .card2{
+    background-color:#ffffff95;
+    padding: 15px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000070;
+
+ }   
+  
