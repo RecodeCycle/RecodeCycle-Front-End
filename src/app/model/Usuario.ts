@@ -7,6 +7,7 @@ export class Usuario{
     public id: number
     public nivel: number
     public nome: string
+    public email: string
     //public postagem: Postagem[]
     public recebaEmail: string
     public telefone: string
