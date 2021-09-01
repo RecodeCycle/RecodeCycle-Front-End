@@ -12,10 +12,10 @@ import { AuthService } from '../service/auth.service';
 })
 export class EntrarComponent implements OnInit {
 
-  usuarioLogin: UsuarioLogin = new UsuarioLogin()
+  usuarioLogin: UsuarioLogin = new UsuarioLogin
 
   constructor(
-    private authService: AuthService,
+    private auth: AuthService,
     private router: Router
   ) { }
 
@@ -24,13 +24,20 @@ export class EntrarComponent implements OnInit {
   }
 
   entrar(){
-    this.authService.entrar(this.usuarioLogin).subscribe((resp: UsuarioLogin)=>{
+    console.log(this.usuarioLogin)
+
+    this.auth.entrar(this.usuarioLogin).subscribe((resp: UsuarioLogin)=>{
       this.usuarioLogin = resp
       
       environment.token = this.usuarioLogin.token
       environment.nome = this.usuarioLogin.nome
       environment.fotoPerfil = this.usuarioLogin.fotoPerfil
       environment.id = this.usuarioLogin.id
+
+      console.log(environment.token)
+      console.log(environment.nome)
+      console.log(environment.fotoPerfil)
+      console.log(environment.id)
 
       
       this.router.navigate(['/inicio'])

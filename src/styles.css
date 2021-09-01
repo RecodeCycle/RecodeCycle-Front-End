@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+
+.avergefont{
+    font-family: 'Average Sans', sans-serif;
+}
+
+/* fontes para serem usadas em componets/div */
