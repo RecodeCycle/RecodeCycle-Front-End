@@ -15,11 +15,11 @@ export class AuthService {
   ) { }
 
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
-    return this.http.post<UsuarioLogin>('https://recodecycle.herokuapp.com/usuarios/logar', usuarioLogin)
+    return this.http.post<UsuarioLogin>('https://recodecyclebackend.herokuapp.com/usuarios/logar', usuarioLogin)
   }
 
   cadastrar(usuario: Usuario): Observable<Usuario>{
-    return this.http.post<Usuario>('https://recodecycle.herokuapp.com/usuarios/cadastrar', usuario)
+    return this.http.post<Usuario>('https://recodecyclebackend.herokuapp.com/usuarios/cadastrar', usuario)
   }
 
   logado(){
