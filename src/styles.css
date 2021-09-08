@@ -5,4 +5,8 @@
     font-family: 'Average Sans', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* fontes para serem usadas em componets/div */
