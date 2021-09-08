@@ -15,6 +15,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { HomeComponent } from './home/home.component';
+import { EquipeComponent } from './equipe/equipe.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { HomeComponent } from './home/home.component';
     CadastrarComponent,
     InicioComponent,
     CategoriaComponent,
-    HomeComponent,    
+    HomeComponent,
+    EquipeComponent,    
   ],
   imports: [
     BrowserModule,
