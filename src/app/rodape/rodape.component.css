@@ -16,9 +16,22 @@ ul.social-network{
   }
   
   .fa-github-square:hover{
-    color: black;
+    color: #218838;
   }
   
   .fa-envelope:hover{
-    color: black;
+    color: #218838;
   }
+
+  .bground {
+  
+    background-image: linear-gradient(to bottom, #239383, #219283 );
+  
+    }
+
+    
+  .bground2 {
+  
+    background-image: linear-gradient(to bottom, #239383, #007F85 );
+  
+    }
