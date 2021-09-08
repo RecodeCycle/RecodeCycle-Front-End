@@ -22,6 +22,10 @@ export class AuthService {
     return this.http.post<Usuario>('https://recodecycle.herokuapp.com/usuarios/cadastrar', usuario)
   }
 
+  getByIdUser(id: number): Observable<Usuario>{
+    return this.http.get<Usuario>(`https://recodecycle.herokuapp.com/usuarios/${id}`)
+  }
+
   logado(){
     let ok: boolean = false
 
@@ -30,6 +34,7 @@ export class AuthService {
     }
     return ok
   }
+
 }
 
 
