@@ -42,7 +42,7 @@
   
         <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
   
-        <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab" href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por tema</a>
+        <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemCategoria-tab" data-toggle="tab" href="#postagemCategoria" role="tab" aria-controls="nav-postagemCategoria" aria-selected="false">Postagens por Categoria</a>
   
       </div>
     </nav>
@@ -57,8 +57,8 @@
         Minhas postagens
       </div>
   
-      <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
-        Postagens por tema
+      <div class="tab-pane fade" id="postagemCategoria" role="tabpanel" aria-labelledby="nav-postagemCategoria-tab">
+        Postagens por Categoria
       </div>
     </div>
   
@@ -91,9 +91,9 @@
           </div>
   
           <div class="form-group">
-            <label for="texto">Escolha um tema ou <a href="">cadastre um novo</a>: </label>
-            <select name="tema" id="tema" class="form-control">
-              <option value="">Temas</option>
+            <label for="texto">Escolha uma categoria ou <a data-dismiss="modal" routerLink='/categoria'>cadastre uma nova</a>: </label>
+            <select name="categoria" id="categoria" class="form-control">
+              <option value="">Categorias</option>
             </select>
           </div>
   
