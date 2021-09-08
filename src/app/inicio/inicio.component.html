@@ -138,6 +138,21 @@
             <label for="texto">Texto</label>
             <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" rows="3"></textarea>
           </div>
+
+          <div class="form-group">
+            <label for="residuos">Residuos</label>
+            <textarea [(ngModel)]='postagem.residuos' class="form-control" name="residuos" id="residuos"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="regioes">Regiões</label>
+            <textarea [(ngModel)]='postagem.regioes' class="form-control" name="regioes" id="regioes"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="informativos">Informativos</label>
+            <textarea [(ngModel)]='postagem.informativos' class="form-control" name="informativos" id="informativos" rows="3"></textarea>
+          </div>
   
           <div class="form-group">
             <label for="texto">Escolha uma categoria ou <a data-dismiss="modal" routerLink='/categoria'>cadastre um novo</a>: </label>
