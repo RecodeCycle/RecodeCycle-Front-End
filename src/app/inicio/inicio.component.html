@@ -42,7 +42,7 @@
   
         <a (click)='findByIdUser()'  class="nav-item nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
   
-        <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemCategoria-tab" data-toggle="tab" href="#postagemCategoria" role="tab" aria-controls="nav-postagemCategoria" aria-selected="false">Postagens por Categoria</a>
+        <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemCategoria-tab" data-toggle="tab" href="#postagemCategoria" role="tab" aria-controls="nav-postagemCategoria" aria-selected="false">Postagens por categoria</a>
   
       </div>
     </nav>
@@ -58,7 +58,7 @@
               <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
               <p class="card-text mt-3">{{item.texto}}</p>
               <p class="card-text"><small class="text-muted">
-                {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
+                {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
               </small></p>
   
               <p class="card-text"><small class="text-muted">
@@ -79,7 +79,7 @@
               <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
               <p class="card-text mt-3">{{item.texto}}</p>
               <p class="card-text"><small class="text-muted">
-                {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
+                {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
               </small></p>
   
             </div>
@@ -97,7 +97,7 @@
               <h5 class="card-title m-0">{{item.titulo}}</h5>
               <p class="card-text mt-3">{{item.texto}}</p>
               <p class="card-text"><small class="text-muted">
-                {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
+                {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
               </small></p>
   
               <p class="card-text"><small class="text-muted">

@@ -5,6 +5,7 @@ import { Categoria } from '../model/Categoria';
 import { Postagem } from '../model/Postagem';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
+import { CategoriaService } from '../service/categoria.service';
 import { PostagemService } from '../service/postagem.service';
 
 @Component({
@@ -17,7 +18,7 @@ export class InicioComponent implements OnInit {
   listaPostagens: Postagem[];
 
   categoria: Categoria = new Categoria();
-  listaCategoria: Categoria[];
+  listaCategorias: Categoria[];
   idCategoria: number;
 
   user: Usuario = new Usuario();
@@ -31,24 +32,27 @@ export class InicioComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    window.scroll(0, 0);
     if (environment.token == '') {
       this.router.navigate(['/entrar']);
     }
 
-    this.getAllTemas();
+    this.getAllCategorias();
     this.getAllPostagens();
   }
 
-  getAllTemas() {
-    this.CategoriaService.getAllTema().subscribe((resp: Categoria[]) => {
-      this.listaCategoria = resp;
+  getAllCategorias() {
+    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
+      this.listaCategorias = resp;
     });
   }
 
   findByIdCategoria() {
-    this.CategoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
-      this.categoria = resp;
-    });
+    this.categoriaService
+      .getByIdCategoria(this.idCategoria)
+      .subscribe((resp: Categoria) => {
+        this.categoria = resp;
+      });
   }
 
   getAllPostagens() {

@@ -4,6 +4,7 @@ import { Usuario } from './Usuario';
 export class Postagem {
   public id: number;
   public titulo: string;
+  public date: Date;
   public texto: string;
   public regioes: string;
   public residuos: string;
