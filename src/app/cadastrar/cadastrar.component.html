@@ -1,49 +1,56 @@
-  <div class="container-fluid" id="bground">
+  
+    <div class="hide-scroll">
+        <div class="viewport">
+    <div class="container-fluid" id="bground">
 
     <div class="row">
 
-        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <img src="https://imgur.com/XlyZyhh.png" class="mr-xl-auto" alt="logorecycle" height='100%'> 
+            <!-- não finalizado, pois a imagem fica com borda na esquerda -->
+        </div>
 
         <div class="col-md-6 mt-5 mb-5">
 
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8 card">
 
-                    <h1 class="text-center">RecodeCycle</h1>
+                    <h1 class="text-center">Cadastre-se</h1>
+                    <p class="text-center">É rapido e fácil </p>
 
                     <div class="form-group ">
-                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Nome"  [(ngModel)]="usuario.nome">
+                        <input class="form-control shadow-lg" type="text" name="nome" id="nome" placeholder="Nome"  [(ngModel)]="usuario.nome">
                     </div>
 
                     <div class="form-group ">
-                        <input class="form-control" type="text" name="usuário" id="usuário"
+                        <input class="form-control shadow-lg" type="text" name="usuário" id="usuário"
                             placeholder="Email" [(ngModel)]="usuario.email" >
                     </div>
 
                     <div class="form-group ">
-                        <input class="form-control" type="text" name="telefone" id="telefone"
+                        <input class="form-control shadow-lg" type="text" name="telefone" id="telefone"
                             placeholder="Telefone (XX) XXXXX-XXXX"  [(ngModel)]="usuario.telefone">
                     </div>
 
                     <div class="form-group">
-                        <input class="form-control" type="text" name="fotoPerfil" id="fotoPerfil"
-                            placeholder="Insira link da foto de perfil"  [(ngModel)]="usuario.fotoPerfil">
+                        <input class="form-control shadow-lg" type="text" name="fotoPerfil" id="fotoPerfil"
+                            placeholder="Insira link da foto de perfil em PNG..."  [(ngModel)]="usuario.fotoPerfil">
                     </div>
 
                     <div class="form-group">
-                        <input class="form-control" type="password" name="senha" id="senha"
+                        <input class="form-control shadow-lg" type="password" name="senha" id="senha"
                             placeholder="Senha" (input)="confirmSenha($event)"
                             >
                     </div>
 
 
                     <div class="form-group">
-                        <input class="form-control" type="password" name="confirmSenha" id="confirmSenha"
+                        <input class="form-control shadow-lg" type="password" name="confirmSenha" id="confirmSenha"
                             placeholder="Confirme sua senha"  [(ngModel)]="usuario.senha">
                     </div>
 
                     <div class="form-group">
-                        <select class="form-control" name="tipo" id="tipo" (change)="tipoAdmin($event)"
+                        <select class="form-control shadow-lg" name="tipo" id="tipo" (change)="tipoAdmin($event)"
                       >
                             <option>Selecione seu perfil:</option>
                             <option value="normal">Usuário</option>
@@ -52,24 +59,27 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-success btn-lg btn-block"
+                        <button type="button" class="btn btn-outline-danger btn-lg btn-block mr-4" aria-describedby="basic-addon1" routerLink='/entrar'>Cancelar</button>
+                        <button type="button" class="btn btn-success btn-lg btn-block mt-0 but1"
                             aria-describedby="basic-addon1" (click)="cadastrar()">Cadastrar</button>
                     </div>
 
-                    <div class="text-center mt-4">
-                        <p>Ao se cadastrar, você concorda com nossos <br> Termos,Política de Dados e Política de
+                    <div class="text-center text-ita mt-4">
+                        <p>Ao se cadastrar, você concorda com nossos <br> Termos, Política de Dados e Política de
                             Cookies.</p>
                     </div>
 
                     <hr>
 
                     <div class="text-center my-2">
-                        <p>Tem uma conta? <a routerLink='/entrar'>Conecte-se</a> </p>
+                        <p>Já uma conta? <a routerLink='/entrar'>Conecte-se</a> </p>
                     </div>
                 </div>
              
             </div>
         </div>
     </div>
+</div>
+</div>
 
    
