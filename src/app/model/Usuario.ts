@@ -1,3 +1,4 @@
+import { Postagem } from "./Postagem"
 
 
 export class Usuario{
@@ -8,7 +9,7 @@ export class Usuario{
     public id: number
   //  public nivel: number
     public nome: string
-    //public postagem: Postagem[]
+    public postagem: Postagem[]
   //  public recebaEmail: string
     public telefone: string
     public senha: string
