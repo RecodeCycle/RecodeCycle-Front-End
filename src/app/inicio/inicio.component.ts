@@ -39,7 +39,6 @@ export class InicioComponent implements OnInit {
 
     this.getAllCategorias();
     this.getAllPostagens();
-    this.authService.refreshToken();
   }
 
   getAllCategorias() {
