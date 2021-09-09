@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { CategoriaDeleteComponent } from './edit/categoria-delete/categoria-delete.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { EquipeComponent } from './equipe/equipe.component';
 import { HomeComponent } from './home/home.component';
@@ -9,6 +11,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { MenuInicialComponent } from './menu-inicial/menu-inicial.component';
 import { MenuComponent } from './menu/menu.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
+
 
 
 
@@ -23,7 +26,9 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'categoria', component: CategoriaComponent },
   { path: 'home', component: HomeComponent},
-  {path: 'equipe', component: EquipeComponent}
+  {path: 'equipe', component: EquipeComponent},
+  {path: "categoria-edit/:id", component: CategoriaEditComponent},
+  {path: "categoria-delete/: id", component: CategoriaDeleteComponent}
   
 
 ];

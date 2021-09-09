@@ -16,6 +16,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { HomeComponent } from './home/home.component';
 import { EquipeComponent } from './equipe/equipe.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+import { CategoriaDeleteComponent } from './edit/categoria-delete/categoria-delete.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { EquipeComponent } from './equipe/equipe.component';
     InicioComponent,
     CategoriaComponent,
     HomeComponent,
-    EquipeComponent,    
+    EquipeComponent,
+    CategoriaEditComponent,
+    CategoriaDeleteComponent,    
   ],
   imports: [
     BrowserModule,
