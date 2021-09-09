@@ -16,8 +16,15 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { HomeComponent } from './home/home.component';
 import { EquipeComponent } from './equipe/equipe.component';
+
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { PostagemDeleteComponent } from './edit/postagem-delete/postagem-delete.component';
+
+
+
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaDeleteComponent } from './edit/categoria-delete/categoria-delete.component';
+
 
 
 @NgModule({
@@ -34,8 +41,13 @@ import { CategoriaDeleteComponent } from './edit/categoria-delete/categoria-dele
     CategoriaComponent,
     HomeComponent,
     EquipeComponent,
+
+    PostagemEditComponent,
+    PostagemDeleteComponent,
+   
+
     CategoriaEditComponent,
-    CategoriaDeleteComponent,    
+
   ],
   imports: [
     BrowserModule,
