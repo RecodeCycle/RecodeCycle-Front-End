@@ -13,19 +13,17 @@
   }
   
   .card{
-      background-color:#ffffff95;
-      padding: 30px;
-      border-radius: 4%;
-      box-shadow: 3px 3px 1px 0px #00000070;
-      
+    background-color:#dce0e08a;
+    padding: 40px;
+    border-radius: 3.9%;
+    box-shadow: 3px 3px 1px 0px #b7cea370;
     }
 
  .card2{
-    background-color:#ffffff95;
-    padding: 15px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #00000070;
-
+  background-color:#dce0e08a;
+    padding: 30px;
+    border-radius: 6%;
+    box-shadow: 3px 3px 1px 0px #b7cea370;
  }   
 
  hr{
@@ -35,11 +33,15 @@
   background-color: rgb(39, 185, 112);
  }
 
- img{
-  
-  transform: scaleX(-1);
- }
+ button{
+  font-size: 18px;
+}
 
+.btn2r{
+  border-width: 2px;
+}
+
+ 
  #element::-webkit-scrollbar {
   display: none;
 }
@@ -73,5 +75,16 @@
    */
   margin-right: -100px;
   padding-right: 80px;
+}
+
+#imgc{
+  background-image: url("https://imgur.com/zGwA7kW.png");
+    height: 100vh;
+    
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
   

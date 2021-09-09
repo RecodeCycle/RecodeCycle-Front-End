@@ -13,6 +13,21 @@
     );
   }
 
-  .textcolor{
-    color: #007f86;
+  
+
+  .btn1{
+    color: none;
+    border-color: none;
+    border: none;
+    
+  }
+  
+
+  .btn2{
+    border-width: 1.5px;
+  }
+
+  a{
+    cursor: pointer;
+    text-decoration: none;
   }
