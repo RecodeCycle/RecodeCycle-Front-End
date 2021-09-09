@@ -26,3 +26,15 @@
     background:linear-gradient(#7a8283,#007f86,#3fb78d) ;
     color: #ffffff
   }
+
+.tm{
+    height: 100vh;
+}
+
+a{
+  color: #ffffff
+}
+
+a:hover{
+  color: #000000
+}
