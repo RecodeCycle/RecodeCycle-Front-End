@@ -35,7 +35,7 @@ const routes: Routes = [
 
   
   {path: 'postagem-edit/:id', component: PostagemEditComponent},
-  {path: 'postagem-delete/:id', component: PostagemDeleteComponent}
+  {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
 
   {path: "categoria-edit/:id", component: CategoriaEditComponent},
   {path: "categoria-delete/:id", component: CategoriaDeleteComponent}
