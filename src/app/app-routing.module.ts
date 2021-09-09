@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   {path: 'equipe', component: EquipeComponent},
   {path: "categoria-edit/:id", component: CategoriaEditComponent},
-  {path: "categoria-delete/: id", component: CategoriaDeleteComponent}
+  {path: "categoria-delete/:id", component: CategoriaDeleteComponent}
   
 
 ];
