@@ -155,7 +155,7 @@
           </div>
   
           <div class="form-group">
-            <label for="texto">Escolha uma categoria ou <a data-dismiss="modal" routerLink='/categoria'>cadastre um novo</a>: </label>
+            <label for="texto">Escolha uma categoria ou <a data-dismiss="modal" routerLink='/categoria'>cadastre uma nova</a>: </label>
             <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria' (change)='findByIdCategoria()'>
               <option *ngFor='let item of listaCategorias' value="{{item.id}}">
                 {{item.descricao}}
