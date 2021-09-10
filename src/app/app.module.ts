@@ -25,6 +25,10 @@ import { PostagemDeleteComponent } from './edit/postagem-delete/postagem-delete.
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaDeleteComponent } from './edit/categoria-delete/categoria-delete.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { AlertasComponent } from './alertas/alertas.component';
+import { OrderModule } from 'ngx-order-pipe';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 
 
 
@@ -48,7 +52,8 @@ import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component
    
 
     CategoriaEditComponent,
-           UsuarioEditComponent,
+    UsuarioEditComponent,
+    AlertasComponent,
 
   ],
   imports: [
@@ -56,6 +61,8 @@ import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ModalModule.forRoot(),
+    OrderModule
   ],
   providers: [{
     provide: LocationStrategy,
