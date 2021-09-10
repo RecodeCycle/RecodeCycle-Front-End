@@ -19,9 +19,6 @@ export class AuthService {
   ) { }
 
 
-
-
-
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
     return this.http.post<UsuarioLogin>('https://recodecycle.herokuapp.com/usuarios/logar', usuarioLogin)
   }
