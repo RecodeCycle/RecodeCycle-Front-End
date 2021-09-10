@@ -7,6 +7,7 @@ import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 import { CategoriaService } from '../service/categoria.service';
 import { PostagemService } from '../service/postagem.service';
+import { AlertasService } from '../service/alertas.service';
 
 @Component({
   selector: 'app-inicio',
@@ -14,6 +15,7 @@ import { PostagemService } from '../service/postagem.service';
   styleUrls: ['./inicio.component.css'],
 })
 export class InicioComponent implements OnInit {
+
   postagem: Postagem = new Postagem();
   listaPostagens: Postagem[];
 
@@ -28,7 +30,9 @@ export class InicioComponent implements OnInit {
     private router: Router,
     private postagemService: PostagemService,
     private categoriaService: CategoriaService,
-    private authService: AuthService
+    private authService: AuthService,
+    private alertas: AlertasService
+
   ) {}
 
   ngOnInit() {
@@ -78,7 +82,7 @@ export class InicioComponent implements OnInit {
       .postPostagem(this.postagem)
       .subscribe((resp: Postagem) => {
         this.postagem = resp;
-        alert('Postagem realizada com sucesso!');
+        this.alertas.showAlertSuccess('Postagem realizada com sucesso!');
         this.postagem = new Postagem();
         this.getAllPostagens();
       });
