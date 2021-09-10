@@ -24,6 +24,7 @@ import { PostagemDeleteComponent } from './edit/postagem-delete/postagem-delete.
 
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaDeleteComponent } from './edit/categoria-delete/categoria-delete.component';
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 
 
 
@@ -47,6 +48,7 @@ import { CategoriaDeleteComponent } from './edit/categoria-delete/categoria-dele
    
 
     CategoriaEditComponent,
+           UsuarioEditComponent,
 
   ],
   imports: [
