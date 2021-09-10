@@ -28,8 +28,20 @@ const routes: Routes = [
   { path: 'cadastrar', component: CadastrarComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'categoria', component: CategoriaComponent },
+
+  { path: 'home', component: HomeComponent},
+  {path: 'equipe', component: EquipeComponent},
+
+  
+  {path: 'postagem-edit/:id', component: PostagemEditComponent},
+  {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
+
+  {path: "categoria-edit/:id", component: CategoriaEditComponent},
+  {path: "categoria-delete/:id", component: CategoriaDeleteComponent},
+
   { path: 'home', component: HomeComponent },
   { path: 'equipe', component: EquipeComponent },
+
 
   { path: 'postagem-edit/:id', component: PostagemEditComponent },
   { path: 'postagem-delete/:id', component: PostagemDeleteComponent },
