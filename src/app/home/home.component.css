@@ -29,3 +29,24 @@
     opacity: 1;
     transition-duration: 0.5s;
   }
+
+  .fs-54{
+    font-size: 800%;
+
+  }
+
+  .card-img-top{
+    height: 60vh;
+    width: 90%;
+    align-items: center;
+
+  }
+
+  .title{
+    font-weight: bolder;
+    
+  }
+
+  .card-text{
+    font-size: 150%;
+  }
