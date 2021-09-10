@@ -23,6 +23,10 @@ export class CategoriaService {
     return this.http.get<Categoria>(`https://recodecycle.herokuapp.com/categorias/${id}`, this.token)
   }
 
+  getByNomeCategoria(nome: string): Observable<Categoria[]>{
+    return this.http.get<Categoria[]>(`https://recodecycle.herokuapp.com/categorias/nome/${nome}`, this.token)
+  }
+
   postCategoria(categoria: Categoria): Observable<Categoria> {
     return this.http.post<Categoria>("https://recodecycle.herokuapp.com/categorias", categoria, this.token)
   }

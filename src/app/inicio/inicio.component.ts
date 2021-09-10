@@ -18,10 +18,12 @@ export class InicioComponent implements OnInit {
 
   postagem: Postagem = new Postagem();
   listaPostagens: Postagem[];
+  tituloPostagem: string;
 
   categoria: Categoria = new Categoria();
   listaCategorias: Categoria[];
   idCategoria: number;
+  nomeCategoria: string;
 
   user: Usuario = new Usuario();
   idUser = environment.id;
@@ -89,5 +91,30 @@ export class InicioComponent implements OnInit {
         this.postagem = new Postagem();
         this.getAllPostagens();
       });
+  }
+
+  
+  findByTituloPostagem(){
+
+    if(this.tituloPostagem == ''){
+      this.getAllPostagens()
+    } else {
+
+      this.postagemService.getByTituloPostagem(this.tituloPostagem).subscribe((resp: Postagem[]) => {
+        this.listaPostagens = resp
+      })
+    }
+  }
+
+  findByNomeCategoria(){
+    if(this.nomeCategoria == ''){
+      this.getAllCategorias()
+    } else {
+
+      this.categoriaService.getByNomeCategoria(this.nomeCategoria).subscribe((resp: Categoria[]) => {
+        this.listaCategorias = resp
+      })
+    }
+
   }
 }
