@@ -12,3 +12,14 @@
   hr{
     background-color: #ffffff
   }
+
+  .btn1{
+    color: none;
+    border-color: none;
+    border: none;
+    
+  }
+
+  .imgh{
+    padding-top: 10%;
+  }
