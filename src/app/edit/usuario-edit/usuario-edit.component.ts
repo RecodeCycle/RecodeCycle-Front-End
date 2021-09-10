@@ -11,9 +11,9 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class UsuarioEditComponent implements OnInit {
   usuario: Usuario = new Usuario();
-  idUsuario: number
-  confirmarSenha: string
-  tipoUser: string
+  idUsuario: number;
+  confirmarSenha: string;
+  tipoUser: string;
 
   constructor(
     private authService: AuthService,
@@ -22,47 +22,46 @@ export class UsuarioEditComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    window.scroll(0, 0)
+    window.scroll(0, 0);
 
     if (environment.token == '') {
-      this.router.navigate(['/entrar'])
+      this.router.navigate(['/entrar']);
     }
 
-    this.idUsuario = this.route.snapshot.params['id']
-    this.findByIdUser(this.idUsuario)
+    this.idUsuario = this.route.snapshot.params['id'];
+    this.findByIdUser(this.idUsuario);
   }
 
   confirmSenha(event: any) {
-    this.confirmarSenha = event.target.value
+    this.confirmarSenha = event.target.value;
   }
 
   tipoAdmin(event: any) {
-    this.tipoAdmin = event.target.value
+    this.tipoAdmin = event.target.value;
   }
 
   atualizar() {
-    this.usuario.admin = this.tipoUser
-    if(this.usuario.senha != this.confirmarSenha){
-      alert('As senhas estão diferentes.')
+    this.usuario.admin = this.tipoUser;
+    if (this.usuario.senha != this.confirmarSenha) {
+      alert('As senhas estão diferentes.');
     } else {
-      console.log(this.usuario)
-      this.authService.putUsuario(this.usuario).subscribe((resp: Usuario)=>{
-        this.usuario = resp
-        this.router.navigate(['/inicio'])
-        alert('Usuário atualizado com sucesso, faça o login novamente.')
+      console.log(this.usuario);
+      this.authService.putUsuario(this.usuario).subscribe((resp: Usuario) => {
+        this.usuario = resp;
+        this.router.navigate(['/inicio']);
+        alert('Usuário atualizado com sucesso, faça o login novamente.');
         environment.token = '';
         environment.nome = '';
         environment.fotoPerfil = '';
         environment.id = 0;
-        this.router.navigate(['/entrar'])
-      })
+        this.router.navigate(['/entrar']);
+      });
     }
   }
 
   findByIdUser(id: number) {
     this.authService.getByIdUser(id).subscribe((resp: Usuario) => {
-      this.usuario = resp
-    })
+      this.usuario = resp;
+    });
   }
-
 }
