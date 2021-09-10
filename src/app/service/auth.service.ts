@@ -20,8 +20,6 @@ export class AuthService {
 
 
 
-}
-
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
     return this.http.post<UsuarioLogin>('https://recodecycle.herokuapp.com/usuarios/logar', usuarioLogin)
   }
@@ -34,8 +32,8 @@ export class AuthService {
     return this.http.get<Usuario>(`https://recodecycle.herokuapp.com/usuarios/${id}`)
   }
 
-  putUsuario(Usuario: Usuario): Observable<Usuario>{
-    return this.http.put<Usuario>('https://recodecycle.herokuapp.com/usuarios/alterar', Usuario)
+  putUsuario(usuario: Usuario): Observable<Usuario>{
+    return this.http.put<Usuario>('https://recodecycle.herokuapp.com/usuarios/alterar', usuario)
   }
 
   logado(){
