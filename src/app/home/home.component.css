@@ -23,3 +23,9 @@
   .imgh{
     padding-top: 10%;
   }
+
+  #piscando{
+    color: red;
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
