@@ -11,6 +11,14 @@
       #5bc489 130%
     );
   }
+  #imgc{
+    background-image: url("https://imgur.com/zGwA7kW.png%22)");
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+  }
   
   .card{
     background-color:#dce0e08a;
@@ -62,17 +70,7 @@
 
 .viewport {
   overflow: auto;
-
-  /* Make sure the inner div is not larger than the container
-   * so that we have room to scroll.
-   */
   max-height: 150%;
-
-  /* Pick an arbitrary margin/padding that should be bigger
-   * than the max width of all the scroll bars across
-   * the devices you are targeting.
-   * padding = -margin
-   */
   margin-right: -100px;
   padding-right: 80px;
 }
