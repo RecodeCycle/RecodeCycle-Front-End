@@ -9,3 +9,35 @@
       #5bc489 130%
     );
   }
+
+  .bground2 {
+    background: linear-gradient(
+     to bottom,
+      #5bc489 -203%,
+      #007f86 90%,
+      #b5e877,
+      #77d183 190%,
+      #5bc489 130%
+    );
+  }
+
+  hr{
+    background-color: #ffff
+  }
+  h4{
+    color:#000;
+  }
+
+  .btn1{
+    color: none;
+    border-color: none;
+    border: none;
+    
+  }
+
+  .imgh{
+    padding-top: 10%;
+    
+  }
+
+  

@@ -16,9 +16,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { MenuInicialComponent } from './menu-inicial/menu-inicial.component';
 import { MenuComponent } from './menu/menu.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
-
-
-
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -30,6 +28,7 @@ const routes: Routes = [
   { path: 'cadastrar', component: CadastrarComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'categoria', component: CategoriaComponent },
+
   { path: 'home', component: HomeComponent},
   {path: 'equipe', component: EquipeComponent},
 
@@ -38,14 +37,22 @@ const routes: Routes = [
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
 
   {path: "categoria-edit/:id", component: CategoriaEditComponent},
-  {path: "categoria-delete/:id", component: CategoriaDeleteComponent}
+  {path: "categoria-delete/:id", component: CategoriaDeleteComponent},
 
-  
+  { path: 'home', component: HomeComponent },
+  { path: 'equipe', component: EquipeComponent },
 
+
+  { path: 'postagem-edit/:id', component: PostagemEditComponent },
+  { path: 'postagem-delete/:id', component: PostagemDeleteComponent },
+
+  { path: 'categoria-edit/:id', component: CategoriaEditComponent },
+  { path: 'categoria-delete/:id', component: CategoriaDeleteComponent },
+  { path: 'usuario-edit/:id', component: UsuarioEditComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
