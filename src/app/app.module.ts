@@ -38,8 +38,6 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     MenuComponent,
     MenuInicialComponent,
     RodapeComponent,
-    SobreNosComponent,
-    RodapeComponent,
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
