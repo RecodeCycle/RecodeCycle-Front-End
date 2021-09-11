@@ -1,24 +1,37 @@
 ul.social-network{
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+}
+
+ul.social-network li{
+  display: inline;
+  margin: 0;
+  padding: 5px;
+}
+
+.fa{
+  font-size: 28pt;
+  color: #f8f8f8;
+  padding: 10px;
+}
+
+.fa-github-square:hover{
+  color: #ebebeb;
+}
+
+.fa-envelope:hover{
+  color: #ebebeb;
+}
+
+.bground {
+
+  background-image: linear-gradient(to bottom, #239383, #219283 );
+
   }
+
   
-  ul.social-network li{
-    display: inline;
-    margin: 0;
-    padding: 5px;
-  }
-  
-  .fa{
-    font-size: 30pt;
-    color: white;
-    padding: 10px;
-  }
-  
-  .fa-github-square:hover{
-    color: black;
-  }
-  
-  .fa-envelope:hover{
-    color: black;
+.bground2 {
+
+  background-image: linear-gradient(to bottom, #239383, #007F85 );
+
   }
