@@ -1,77 +1,80 @@
 #bground {
-    
-    height: 100%;
-    width: 100vw;
-    background: linear-gradient(
-      to bottom,
-      #3fb78d,
-      #007f86 90%,
-      #b5e877,
-      #77d183 190%,
-      #5bc489 130%
-    );
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background: #92C1FF;
+}
+#imgc{
+  background-image: url("https://imgur.com/zGwA7kW.png%22)");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card{
+  background-color:#111E54;
+  padding: 40px;
+  border-radius: 3.9%;
+  box-shadow: 3px 3px 1px 0px #b7cea370;
   }
-  
-  .card{
-      background-color:#ffffff95;
-      padding: 30px;
-      border-radius: 4%;
-      box-shadow: 3px 3px 1px 0px #00000070;
-      
-    }
 
- .card2{
-    background-color:#ffffff95;
-    padding: 15px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #00000070;
+.card2{
+background-color:#dce0e08a;
+  padding: 30px;
+  border-radius: 6%;
+  box-shadow: 3px 3px 1px 0px #b7cea370;
+}   
 
- }   
-
- hr{
-   background-color: #000000;
- }
+hr{
+ background-color: #000000;
+}
 .but1:hover{
-  background-color: rgb(39, 185, 112);
- }
-
- img{
-  
-  transform: scaleX(-1);
- }
-
- #element::-webkit-scrollbar {
-  display: none;
-}
-::-webkit-scrollbar {
-  display: none;
+background-color: rgb(39, 185, 112);
 }
 
+button{
+font-size: 18px;
+}
+
+.btn2r{
+border-width: 2px;
+}
+
+
+#element::-webkit-scrollbar {
+display: none;
+}
 ::-webkit-scrollbar {
-  display: block;
+display: none;
+}
+
+::-webkit-scrollbar {
+display: block;
 }
 #element {
-  scrollbar-width: none;
+scrollbar-width: none;
 }
 
 .hide-scroll {
-  overflow: hidden;
+overflow: hidden;
 }
 
 .viewport {
-  overflow: auto;
-
-  /* Make sure the inner div is not larger than the container
-   * so that we have room to scroll.
-   */
-  max-height: 150%;
-
-  /* Pick an arbitrary margin/padding that should be bigger
-   * than the max width of all the scroll bars across
-   * the devices you are targeting.
-   * padding = -margin
-   */
-  margin-right: -100px;
-  padding-right: 80px;
+overflow: auto;
+max-height: 150%;
+margin-right: -100px;
+padding-right: 80px;
 }
+
+#imgc{
+background-image: url("https://imgur.com/zGwA7kW.png");
+  height: 80vh;
   
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
