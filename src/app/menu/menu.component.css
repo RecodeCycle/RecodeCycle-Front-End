@@ -3,14 +3,10 @@
   }
 
   .bground {
-    background: linear-gradient(
-     to top,
-      #3fb78d,
-      #007f86 90%,
-      #b5e877,
-      #77d183 190%,
-      #5bc489 130%
-    );
+    background: #111E54;
+  }
+  a{
+    color: #92C1FF;
   }
 
   
