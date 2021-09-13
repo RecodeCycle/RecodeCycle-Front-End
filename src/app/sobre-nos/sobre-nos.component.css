@@ -1,9 +1,42 @@
-.alinhaTexto {
-    margin-top: 10rem;
+.bground {
+    height: 100vh;
+    background: linear-gradient(
+      to bottom,
+      #3fb78d,
+      #007f86 90%,
+      #b5e877,
+      #77d183 190%,
+      #5bc489 130%
+    );
+  }
+  
+  .tamanho-card{
+    width: 55rem;
+    height: 15rem;
+  }
+
+.cd{
+  background: linear-gradient(
+      to bottom,
+      #3fb78d,
+      #007f86 90%,
+      #b5e877,
+      #77d183 190%,
+      #5bc489 130%)
 }
 
-.alinhaImagem {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  .cd:hover{
+    background:linear-gradient(#7a8283,#007f86,#3fb78d) ;
+    color: #ffffff
+  }
+
+card:hover{
+  background: linear-gradient(#7a8283,#007f86,#3fb78d)
+}
+
+.fs-54{
+  font-size: 600%;
+  color: whitesmoke;
+
 }
 

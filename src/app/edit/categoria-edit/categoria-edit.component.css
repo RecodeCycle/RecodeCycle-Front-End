@@ -1,0 +1,35 @@
+.bg-1 {
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    #3fb78d,
+    #007f86 90%,
+    #b5e877,
+    #77d183 190%,
+    #5bc489 130%
+  );
+}
+
+.btn {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.btn-1 {
+border-color: #f8f8f8;
+color: #f8f8f8;
+}
+
+.btn-2 {
+background-color: #f8f8f8;
+}
+
+.btn-2:hover{
+background-color: #ebebeb;
+}
+
+.color-text {
+color: #f8f8f8 
+}

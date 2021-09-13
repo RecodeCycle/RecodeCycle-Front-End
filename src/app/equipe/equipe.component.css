@@ -1,0 +1,40 @@
+.bground {
+    height: 100vh;
+    background: linear-gradient(
+      to bottom,
+      #3fb78d,
+      #007f86 90%,
+      #b5e877,
+      #77d183 190%,
+      #5bc489 130%
+    );
+  }
+  
+ 
+
+.cd{
+  background: linear-gradient(
+      80deg,
+      #406356,
+      #007f86 90%,
+      #95d14c,
+      #47f55e 190%,
+      #5bc489 130%)
+}
+
+  .cd:hover{
+    background:linear-gradient(#7a8283,#007f86,#3fb78d) ;
+    color: #ffffff
+  }
+
+.tm{
+    height: 100vh;
+}
+
+a{
+  color: #f4f4f4
+}
+
+a:hover{
+  color: #0c0c0c
+}

@@ -1,8 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
 
-.avergefont{
-    font-family: 'Average Sans', sans-serif;
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200&family=Red+Rose:wght@300;400&display=swap'); */
+
+/* @import url('http://fonts.cdnfonts.com/css/flink'); */
+@import url("http://fonts.cdnfonts.com/css/folks-light");
+
+
+*{
+  /* font-family: 'Lexend Giga', sans-serif; */
+  /* font-family: 'Flink', sans-serif; */
+  font-family: "Folks-Light", sans-serif;
+  /* font-family: "Folks", sans-serif; */
+  /* font-family: "Folks-Heavy", sans-serif; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* fontes para serem usadas em componets/div */

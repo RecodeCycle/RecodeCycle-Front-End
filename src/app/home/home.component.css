@@ -1,0 +1,60 @@
+.bground {
+  height: 100vh;
+  background: linear-gradient(
+   to bottom,
+    #3fb78d,
+    #007f86 90%,
+    #b5e877,
+    #77d183 190%,
+    #5bc489 130%
+  );
+}
+hr{
+  background-color: #f4f4f4;
+}
+
+.btn1{
+  color: none;
+  border-color: none;
+  border: none;
+  
+}
+
+.imgh{
+  padding-top: 10%;
+}
+
+#piscando{
+  color: red;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.fs-54{
+  font-size: 800%;
+
+}
+
+.card-img-top{
+  height: 60vh;
+  width: 90%;
+  align-items: center;
+
+}
+
+.title{
+  font-weight: bolder;
+  
+}
+
+.card-text{
+  font-size: 150%;
+}
+
+.max h1{
+  font-size: max(60px, 5vw);
+}
+
+.min{
+  font-size: 18px;
+}
