@@ -1,17 +1,10 @@
 .bground {
   height: 100vh;
-  background: linear-gradient(
-   to bottom,
-    #3fb78d,
-    #007f86 90%,
-    #b5e877,
-    #77d183 190%,
-    #5bc489 130%
-  );
+  background: #92C1FF;
 }
 
 .card{
-    background-color:#dce0e08a;
+    background-color:#B5F6CF;
     padding: 30px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #b7cea370;
@@ -25,6 +18,7 @@
 button:hover{
  background-color: rgb(39, 185, 112);
 }
+
 
 
 
