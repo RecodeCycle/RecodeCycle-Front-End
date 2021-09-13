@@ -1,0 +1,33 @@
+.chamadabox{
+    padding-top: 5rem;
+  }
+
+  .bground {
+    background: linear-gradient(
+     to top,
+      #3fb78d,
+      #007f86 90%,
+      #b5e877,
+      #77d183 190%,
+      #5bc489 130%
+    );
+  }
+
+  
+
+  .btn1{
+    color: none;
+    border-color: none;
+    border: none;
+    
+  }
+  
+
+  .btn2{
+    border-width: 1.5px;
+  }
+
+  a{
+    cursor: pointer;
+    text-decoration: none;
+  }
