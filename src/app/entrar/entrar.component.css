@@ -1,0 +1,23 @@
+.bground {
+  height: 100vh;
+  background: #92C1FF;
+}
+
+.card{
+    background-color:#B5F6CF;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #b7cea370;
+    
+  }
+  hr{
+    background-color: #000000
+  }
+
+
+button:hover{
+ background-color: rgb(39, 185, 112);
+}
+
+
+

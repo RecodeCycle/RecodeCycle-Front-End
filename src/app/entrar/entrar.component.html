@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div class="row bground avergefont">
+    <div class="col-md-6">
+      
+    </div>
+
+    <div class="col-md-12 mt-5 mb-5 my-5 avergefont">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4 card my-5">
+          <h1 class="text-center text-white mb-2">Entrar</h1>
+
+          <div class="form-group my-3">
+            <input [(ngModel)]="usuarioLogin.email" class="form-control" type="text" name="nome" id="email"
+              placeholder="Email"/>
+          </div>
+
+          <div class="form-group ">
+            <input [(ngModel)]="usuarioLogin.senha" class="form-control" type="password" name="senha" id="senha"
+              placeholder="Senha" />
+          </div>
+
+
+          <div class="d-flex justify-content-center">
+
+            <button type="button" class="btn btn-success btn-lg btn-block" aria-describedby="basic-addon1"
+              (click)="entrar()">
+              Entrar
+            </button>
+          </div>
+          
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10">
+              <hr class="my-4">
+              <div class="text-center mb-2  mt-2">
+                <p class="text-white">
+                  Não tem uma conta? <a routerLink="/cadastrar">Cadastre-se</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

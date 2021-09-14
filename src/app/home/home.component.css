@@ -1,0 +1,65 @@
+.bground {
+  height: 100vh;
+  background: #B5F6CF;
+}
+.bground2{
+  background: #F6F6F6f6;
+}
+hr{
+  background-color: #111E54;
+}
+h1, h2, p{
+  color: #111E54;
+}
+.btone{
+  background-color: #92C1FF;
+  border-color: #92C1FF ;
+}
+
+.btn1{
+  color: none;
+  border-color: none;
+  border: none;
+  
+}
+
+.fs-54{
+  font-size: 800%;
+
+}
+
+.card-img-top {
+  height: 60vh;
+  width: 90%;
+  align-items: center;
+
+}
+
+.title{
+  font-weight: bolder;
+  
+}
+
+.card-text{
+  font-size: 130%;
+}
+
+.max h1{
+  font-size: max(60px, 5vw);
+}
+
+.min{
+  font-size: 16px;
+}
+
+.min2{
+  font-size: 20px;
+}
+
+.min3{
+  font-size: 32px;
+}
+
+.c{
+  color: #92C1FF ;
+}
