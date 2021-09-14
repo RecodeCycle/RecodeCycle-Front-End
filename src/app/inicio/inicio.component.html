@@ -65,7 +65,7 @@
             <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
             <p class="card-text mt-3">{{item.texto}}</p>
             <p class="card-text"><small class="text-muted">
-              Região: {{item.regioes}}
+              Estado: {{item.regioes}}
             </small></p>
             <p class="card-text"><small class="text-muted">
                 {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
@@ -172,7 +172,7 @@
           <label for="regioes">Estado</label>
             <select class="form-control" [(ngModel)]='postagem.regioes' name="regioes" id="regioes">
            
-            <option selected>Escolha...</option>
+            <option selected>Escolha seu estado...</option>
             <option value="AC">AC</option>
             <option value="AL">AL</option>
             <option value="AP">AP</option>
