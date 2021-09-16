@@ -1,0 +1,81 @@
+#bground {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    background: #B5F6CF;
+  }
+  #imgc{
+    background-image: url("https://imgur.com/zGwA7kW.png%22)");
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+  }
+  
+  .card{
+    background-color:#111E54;
+    padding: 40px;
+    border-radius: 3.9%;
+    box-shadow: 3px 3px 1px 0px #b7cea370;
+    }
+
+ .card2{
+  background-color:#dce0e08a;
+    padding: 30px;
+    border-radius: 6%;
+    box-shadow: 3px 3px 1px 0px #b7cea370;
+ }   
+
+ hr{
+   background-color: #000000;
+ }
+.but1:hover{
+  background-color: rgb(39, 185, 112);
+ }
+
+ button{
+  font-size: 18px;
+}
+
+.btn2r{
+  border-width: 2px;
+}
+
+ 
+ #element::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: block;
+}
+#element {
+  scrollbar-width: none;
+}
+
+.hide-scroll {
+  overflow: hidden;
+}
+
+.viewport {
+  overflow: auto;
+  max-height: 150%;
+  margin-right: -100px;
+  padding-right: 80px;
+}
+
+#imgc{
+  background-image: url("https://imgur.com/zGwA7kW.png");
+    height: 80vh;
+    
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+  

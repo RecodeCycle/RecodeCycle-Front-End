@@ -1,23 +1,39 @@
 .bground {
-  position: relative;
   height: 100vh;
-  width: 100vw;
-  background: linear-gradient(
-    80deg,
-    #3fb78d,
-    #007f86 90%,
-    #b5e877,
-    #77d183 190%,
-    #5bc489 130%
-  );
+  background: #92C1FF;
 }
 
 .card{
-    background-color:#ffffff95;
+    background-color:#B5F6CF;
     padding: 30px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #00000070;
+    border-radius: 3% 9%;
+    box-shadow: 3px 3px 1px 0px #b7cea370;
     
   }
+  .card2{
+    background-color:#a9e7c2;
+    padding: 30px;
+    border-radius: 3% 9%;
+    box-shadow: 3px 3px 1px 0px #b7cea370;
+    
+  }
+
+
+  hr{
+    background-color: #000000
+  }
+
+
+button:hover{
+ background-color: rgb(39, 185, 112);
+}
+
+.drop-shadow{
+  -webkit-filter: drop-shadow(12px 12px 7px rgb(0, 0, 0, 0.7));
+  filter: drop-shadow(12px 12px 7px rgb(0, 0, 0, 0.7))
+}
+.box-shadow{
+  box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.7);
+}
 
 
