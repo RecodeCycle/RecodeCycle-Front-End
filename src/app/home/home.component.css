@@ -29,9 +29,11 @@ h1, h2, p{
 }
 
 .card-img-top {
-  height: 60vh;
-  width: 90%;
-  align-items: center;
+  display: inline;
+  height: 30vh;
+  width: 50%;
+  align-items: rigth;
+
 
 }
 
