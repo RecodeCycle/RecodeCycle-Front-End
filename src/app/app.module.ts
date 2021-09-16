@@ -22,9 +22,9 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
     MenuInicialComponent,
 
     RodapeComponent,
-    SobreNosComponent
+    SobreNosComponent,
 
-    RodapeComponent
+    RodapeComponent,
 
     EntrarComponent,
     CadastrarComponent

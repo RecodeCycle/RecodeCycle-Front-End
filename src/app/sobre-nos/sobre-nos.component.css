@@ -1,17 +1,48 @@
 .bground {
-    height: 100vh;
-    background: linear-gradient(
-      to bottom,
-      #3fb78d,
-      #007f86 90%,
-      #b5e877,
-      #77d183 190%,
-      #5bc489 130%
-    );
-  }
+  height: 100%;
+  background: #92C1FF;
   
-  .tamanho-card{
-    width: 55rem;
-    height: 15rem;
-  }
-  
+}
+
+.tamanho-card{
+  width: 55rem;
+  height: 15rem;
+}
+
+.card-img-top {
+  height: 60vh;
+  width: 90%;
+  align-items: center;
+
+}
+
+
+.card:hover{
+background: #B5F6CF;
+}
+
+.fs-54{
+font-size: 363%;
+color: whitesmoke;
+
+}
+
+
+.max h1{
+font-size: max(60px, 5vw);
+}
+
+.min{
+font-size: 16px;
+}
+
+/* p:hover{
+color: #ffffff
+} */
+
+.img-click{
+align-items: center;
+height: 50%;
+width: 50%;
+
+}
