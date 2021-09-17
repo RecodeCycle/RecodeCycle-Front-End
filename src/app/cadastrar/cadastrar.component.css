@@ -126,7 +126,6 @@
       }
       .content::before {
         background-image: url("https://imgur.com/7IEKfoA.jpg");
-        
        top: 0;
        border-radius: 0;
      }
