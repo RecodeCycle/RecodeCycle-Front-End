@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="row bground avergefont">
     <div class="col-md-12 my-5">
       <div class="container my-5 d-flex card drop-shadow justify-items-center">
@@ -67,4 +67,49 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<body class="container col-md-12">
+  <div class="img-card-left">
+    <div class="content first-content">
+      <div class="first-column">
+      
+      </div>
+      <div class="second-column">
+        <h2 class="title title-second">Entrar</h2>
+
+        <p class="description description-second"></p>
+        <form class="form">
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input
+              type="text"
+              name="nome"
+              id="email"
+              placeholder="Digite seu email..."
+              [(ngModel)]="usuarioLogin.email"
+            />
+          </label>
+
+          <label class="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite sua senha..."
+              [(ngModel)]="usuarioLogin.senha"
+            />
+          </label>
+
+          <button class="btn btn-second" (click)="entrar()">entrar</button>
+          <p class="text-center mt-3 ">
+            Não tem uma conta? <a routerLink="/cadastrar">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+      <!-- second column -->
+    </div>
+  
+  </div>
+</body>
