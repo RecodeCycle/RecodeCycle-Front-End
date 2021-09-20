@@ -28,6 +28,7 @@ import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component
 import { AlertasComponent } from './alertas/alertas.component';
 import { OrderModule } from 'ngx-order-pipe';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { SidebarModule } from 'ng-sidebar';
 
 
 
@@ -51,7 +52,6 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 
     PostagemEditComponent,
     PostagemDeleteComponent,
-   
 
 
     CategoriaEditComponent,
@@ -65,7 +65,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     HttpClientModule,
     FormsModule,
     ModalModule.forRoot(),
-    OrderModule
+    OrderModule,
+    SidebarModule.forRoot()
   ],
   providers: [{
     provide: LocationStrategy,
