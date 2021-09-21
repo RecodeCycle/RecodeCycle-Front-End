@@ -1,29 +1,35 @@
 .chamadabox{
-    padding-top: 5rem;
-  }
+  padding-top: 5rem;
+}
 
-  .bground {
-    background: #111E54;
-  }
-  a{
-    color: #92C1FF;
-  }
+.bground {
+  background: #111E54;
+}
+a{
+  color: #92C1FF;
+}
 
+.btn1{
+  color: none;
+  border-color: none;
+  border: none;
   
+}
 
-  .btn1{
-    color: none;
-    border-color: none;
-    border: none;
-    
-  }
-  
 
-  .btn2{
-    border-width: 1.5px;
-  }
+.btn2{
+  border-width: 1.5px;
+}
 
-  a{
-    cursor: pointer;
-    text-decoration: none;
-  }
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#butcolor{
+  background: #92C1FF;
+}
+
+#butcolor span {
+  background-color: #111E54;
+}
