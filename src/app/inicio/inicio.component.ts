@@ -31,6 +31,10 @@ export class InicioComponent implements OnInit {
   key : 'data'
   reverse = true
 
+  foto = environment.fotoPerfil
+  nome = environment.nome
+  id = environment.id
+
   constructor(
     private router: Router,
     private postagemService: PostagemService,
@@ -48,6 +52,14 @@ export class InicioComponent implements OnInit {
 
     this.getAllCategorias();
     this.getAllPostagens();
+  }
+
+  sair() {
+    this.router.navigate(["/home"])
+    environment.token = ""
+    environment.nome = ""
+    environment.fotoPerfil = ""
+    environment.id = 0
   }
 
   getAllCategorias() {

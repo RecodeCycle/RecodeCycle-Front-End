@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="row bg-1 d-flex align-items-center">
     <div class="col-md-6">
       <div class="row d-flex justify-content-center">
@@ -133,7 +133,185 @@
     </div>
   </div>
 
-</div>
+</div> -->
+
+<body class="body body-sidebar">
+
+  <div class="sidebar">
+    
+    <div class="sidebarOption active">
+      <span class="material-icons"> </span>
+      <a routerLink='/home' href=""> <h2>Home</h2></a>
+      
+    </div>
+
+    <div class="sidebarOption">
+      <span class="material-icons"></span>
+      <a routerLink='/sobre-nos' href=""> <h2>Sobre</h2></a>
+    </div>
+
+    <div class="sidebarOption">
+      <span class="material-icons"> </span>
+      <a routerLink='/equipe' href=""> <h2>Equipe</h2></a>
+    </div>
+  
+    
+    <div class="sidebarOption">
+      <span class="material-icons"> perm_identity</span>
+      <a [routerLink]="['/usuario-edit', id]"> <h2>Editar Perfil</h2></a>
+    </div>
+
+    <div class="sidebarOption">
+      <span class="material-icons"> more_horiz</span>
+      <a (click)="sair()"> <h2>Sair</h2></a>
+      
+    </div>
+
+    <button class="sidebar__tweet">Minhas postagens</button>
+  </div>
+
+    <!-- Main-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-0 col-md-2"></div>
+          <div class="col-12 col-md-8">
+
+            <!-- Profile-->
+            <div class="container">
+              <div class="row" style="padding-top: 20px;">
+                <div class="col-3">
+                  <img src="{{foto}}" alt="Imagem da usuária" width="100%" height="px"
+                    class="img-fluid rounded-circle" />
+                </div>
+                <div class="col-7">
+                  <div class="row" style="padding-top: 20px; padding-bottom: 10px;">
+                    <div class="col-8 col-lg-12">
+                      <h2 class="username">Olá, {{nome}}!</h2>
+                      <small class="">Bem vindo ao RecodeCycle</small>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="feed">
+              
+              <div class="tweetBox">
+                <form>
+                  <div class="tweetbox__input row">
+                    <div class="alert alert-light text-center row" role="alert">
+                      Compartilhe conosco suas experiências!
+                    </div>
+                    <button class="btn btn-second"> Publicar</button>
+                   
+                  </div>
+                 
+                </form>
+              </div>
+            </div>
+           
+
+            <!-- Nav-Feed-->
+            <div class="feed">
+              <ul class="nav nav-tabs nav-feed" id="postagemCategoria" role="tablist"
+                aria-labelledby="nav-postagemCategoria-tab">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active nav-link-1" id="nav-todasPostagens-tab" data-bs-toggle="tab"
+                    href="#todasPostagens" role="tab" aria-controls="home" aria-selected="true"><i
+                      class="bi bi-grid-3x3"></i> TODAS AS POSTAGENS</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a (click)='findByIdUser()' class="nav-link nav-link-2" id="nav-minhasPostagens-tab"
+                    data-bs-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens"
+                    aria-selected="false"><i class="bi bi-file-person"></i> MINHAS POSTAGENS</a>
+
+                </li>
+              </ul>
+
+              <!-- Card-Feed-->
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
+                  aria-labelledby="nav-todasPostagens-tab">
+                  <div class="row" style="padding-bottom: 25px;">
+
+
+
+                    <div class="col-10 ">
+                      <div class="card text-center" *ngFor='let item of listaPostagens | orderBy : key : reverse'>
+
+
+                        <h5 class="card-title m-0">{{item.titulo}}</h5>
+                        <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
+                        <p class="card-text mt-3">{{item.texto}}</p>
+                        <img src="images/post1.png" class="card-img-top" alt="...">
+                        <p class="card-text"><small class="text-muted">
+                            Estado: {{item.regioes}}
+                          </small></p>
+                        <p class="card-text"><small class="text-muted">
+                            {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
+                          </small></p>
+
+                        <p class="card-text"><small class="text-muted">
+                            by: {{item.usuario.nome}}
+                          </small></p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-0 col-md-2"></div>
+        </div>
+      </div>
+    </section>
+  
+
+
+  <script type="text/javascript">
+
+    var crl = document.getElementById('myCrl').getContext('2d');
+
+    crl.beginPath();
+    crl.arc(60, 100, 40, 0, 2 * Math.PI);
+    crl.fillStyle = '#00ACC1';
+    crl.fill();
+    crl.linewidth = 5;
+    crl.strokeStyle = '#dbdbdb';
+    crl.stroke();
+
+    var crl1 = document.getElementById('myCrl1').getContext('2d');
+
+    crl1.beginPath();
+    crl1.arc(60, 100, 40, 0, 2 * Math.PI);
+    crl1.fillStyle = '#F8BBD0';
+    crl1.fill();
+    crl1.linewidth = 5;
+    crl1.strokeStyle = '#dbdbdb';
+    crl1.stroke();
+
+    var crl2 = document.getElementById('myCrl2').getContext('2d');
+
+    crl2.beginPath();
+    crl2.arc(60, 100, 40, 0, 2 * Math.PI);
+    crl2.fillStyle = '#E91E63';
+    crl2.fill();
+    crl2.linewidth = 5;
+    crl2.strokeStyle = '#dbdbdb';
+    crl2.stroke();
+
+  </script>
+
+
+
+</body>
+
 
 
 

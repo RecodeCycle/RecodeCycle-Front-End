@@ -1,22 +1,293 @@
-.bg-1 {
-  background: linear-gradient(
-    to right,
-    
-    
-    
-    
-    #3fb78d,
-    #007f86 90%,
-    #b5e877,
-    #77d183 190%,
-    #5bc489 130%
-    );
+.body {
+  background-color: #fafafa;
 }
 
-.fs-54{
-  font-size: 54pt;
+.body-sidebar{
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
 }
 
-.fs-18{
-  font-size: 18pt;
+.nav-top {
+  height: 63px; 
+  background-color: white !important; 
+  border-top:0.5px solid #dbdbdb; 
+  border-bottom:1px solid #dbdbdb;
 }
+
+.nav-container {
+  padding-left: 25% !important; 
+  padding-right: 25% !important;
+}
+
+@media screen and (max-width: 1605px) {
+  .nav-container {
+      padding-left: 20% !important; 
+      padding-right: 20% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-container {
+      padding-left: 5% !important; 
+      padding-right: 5% !important;
+  }
+}
+
+.img-nav {
+  border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%; 
+  max-width:30px; 
+  max-height:25px;
+}
+
+.img-profile {
+  border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%; 
+  max-width:200px; 
+  max-height:150px;
+}
+
+.username {
+  font-weight: 300; font-size: 28px;
+}
+
+.name {
+  font-size: 16px; display: inline; font-weight: 600 !important;
+}
+
+.profile-datas {
+  font-size: 16px;
+}
+
+.profile-desc {
+  font-size: 16px; 
+}
+
+.sidebarOption{
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebarOption .material-icons, .fa-twitter{
+    padding: 20px;
+
+}
+
+.sidebarOption h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.sidebarOption :hover{
+     background-color: var(--twitter-background);
+     border-radius: 30px;
+     color: var(--twitter-color);
+     transition: color 100ms ease-out;
+}
+
+.sidebarOption.active{
+    color: var(--twitter-background);
+}
+
+.sidebar__tweet{
+    width: 100%;
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.sidebar {
+  border-right: 1px solid var(--twitter-color);
+  flex: 0.2;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-feed {
+  border-bottom: none !important; 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+ 
+ 
+}
+.feed{
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* tweet box */
+
+.tweetBox { /*BOTÃO PUBLICAR*/
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--twitter-background);
+  padding-right: 10px;
+}
+
+.tweetBox form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.tweetbox__input {
+ display: flex;
+ padding: 20px;
+ border-radius: 15px;
+ 
+}
+
+
+
+.tweetBox__tweetButton{
+ background-color:#92C1FF;
+ border: none;
+ color: white;
+ font-weight: 900;
+ border-radius: 30px;
+ width: 80px;
+ height: 40px;
+ margin-top: 20px;
+ margin-left: auto;
+
+}
+
+.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
+}
+
+.btn-second {
+  background-color: #58af9b;
+  border: 1px solid #58af9b;
+  transition: background-color 0.5s;
+}
+.btn-second:hover {
+  background-color: #fff;
+  border: 1px solid #58af9b;
+  color: #58af9b;
+}
+
+body{
+  --twitter-color: #50b7f5;
+  --twitter-background: #e6ecf0;
+}
+
+.feed{
+  flex: 0.5;
+  border-right: 1px solid var(--twitter-background);
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+.feed__header{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid var(--twitter-background);
+  padding: 5px 10px;
+}
+
+
+.feed::-webkit-scrollbar{ /* para deixar scrollbar invisivel */
+  display: none;
+}
+
+.feed {  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+
+.nav-link-1 {
+  color: #495057;
+  background-color: #fafafa !important;
+  border-color: gray #fff #fff !important;
+  border-top-right-radius: .0rem !important;
+  border-top-left-radius: .0rem !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nav-link-2 {
+  color: #a2a8af;
+  background-color: #fafafa !important;
+  border-color: #fff #fff #fff !important;
+  border-top-right-radius: .0rem !important;
+  border-top-left-radius: .0rem !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.card {
+  border: 0px solid rgba(0,0,0,.125) !important;
+  border-radius: .0rem !important;
+}
+
+.card .card-img, .card-img-top {
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
+}
+
+.stories{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-control {
+  border-radius: .15rem !important;
+  padding: 0% !important; 
+  background-color: #fafafa !important; 
+  text-align: center; 
+  font-size: 15px !important;
+}
+
+.icons {
+  padding: 4%; 
+  font-size: 25px;
+}
+
+.button-edit {
+  color: black !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  border-color: #dae1e7 !important;
+}
+
+.btn {
+  padding: .100rem .50rem !important;
+}
+
