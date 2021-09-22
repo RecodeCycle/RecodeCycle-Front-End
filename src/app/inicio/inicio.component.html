@@ -268,12 +268,7 @@
                         <div class="row" style="padding-bottom: 25px;">
                           <div class="col-10 ">
                             <div class="card text-center" *ngFor='let item of user.postagem  | orderBy : key : reverse'>
-                              <p class="card-text"><small class="text-muted">
-                                <img src="{{item.usuario.fotoPerfil}}" width="10%" height="px"
-                                class="img-fluid rounded-circle" alt="">
-                                {{item.usuario.nome}} 
-                                
-                              </small></p>
+                              
                               <h5 class="card-title m-0">{{item.titulo}}</h5>
                               <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
                               <p class="card-text mt-3">{{item.texto}}</p>
@@ -301,8 +296,10 @@
                 </form>
               </div>
             </div>
-            
-            
+           
+
+            <!-- Nav-Feed-->
+           
           </div>
           <div class="col-0 col-md-2"></div>
         </div>
