@@ -139,19 +139,19 @@
 
   <div class="sidebar">
     
-    <div class="sidebarOption active">
-      <span class="material-icons"> </span>
+    <div class="sidebarOption ">
+      <span class="material-icons"> home</span>
       <a routerLink='/home' href=""> <h2>Home</h2></a>
       
     </div>
 
     <div class="sidebarOption">
-      <span class="material-icons"></span>
+      <span class="material-icons">find_in_page </span>
       <a routerLink='/sobre-nos' href=""> <h2>Sobre</h2></a>
     </div>
 
     <div class="sidebarOption">
-      <span class="material-icons"> </span>
+      <span class="material-icons"> groups </span>
       <a routerLink='/equipe' href=""> <h2>Equipe</h2></a>
     </div>
   
@@ -207,65 +207,96 @@
                     <button class="btn btn-second"> Publicar</button>
                    
                   </div>
+                  
+                  <!-- Nav-Feed -->
+                  <div class="feed">
+                    <ul class="nav nav-tabs nav-feed" id="postagemCategoria" role="tablist"
+                      aria-labelledby="nav-postagemCategoria-tab">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link active nav-link-1" id="nav-todasPostagens-tab" data-bs-toggle="tab"
+                          href="#todasPostagens" role="tab" aria-controls="home" aria-selected="true"><i
+                            class="bi bi-grid-3x3"></i> TODAS AS POSTAGENS</a>
+                      </li>
+      
+                      <li class="nav-item" role="presentation">
+                        <a (click)='findByIdUser()' class="nav-link nav-link-2" id="nav-minhasPostagens-tab"
+                          data-bs-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens"
+                          aria-selected="false"><i class="bi bi-file-person"></i> MINHAS POSTAGENS</a>
+      
+                      </li>
+                    </ul>
+      
+                    <!-- Card-Feed-->
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
+                        aria-labelledby="nav-todasPostagens-tab">
+                        <div class="row" style="padding-bottom: 25px;">
+      
+      
+      
+                          <div class="col-10 ">
+                            <div class="card text-center" *ngFor='let item of listaPostagens | orderBy : key : reverse'>
+      
+      
+                              <h5 class="card-title m-0">{{item.titulo}}</h5>
+                              <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
+                              <p class="card-text mt-3">{{item.texto}}</p>
+                              <img src="images/post1.png" class="card-img-top" alt="...">
+                              <p class="card-text"><small class="text-muted">
+                                  Estado: {{item.regioes}}
+                                </small></p>
+                              <p class="card-text"><small class="text-muted">
+                                  {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
+                                </small></p>
+      
+                              <p class="card-text"><small class="text-muted">
+                                  by: {{item.usuario.nome}}
+                                </small></p>
+
+                                <hr>
+      
+                            </div>
+                          </div>
+                        </div>
+      
+                      </div>
+
+                      <div class="tab-pane fade show active" id="minhasPostagens" role="tabpanel"
+                        aria-labelledby="nav-minhasPostagens-tab">
+                        <div class="row" style="padding-bottom: 25px;">
+                          <div class="col-10 ">
+                            <div class="card text-center" *ngFor='let item of user.postagem  | orderBy : key : reverse'>
+                              <h5 class="card-title m-0">{{item.titulo}}</h5>
+                              <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
+                              <p class="card-text mt-3">{{item.texto}}</p>
+                              <img src="images/post1.png" class="card-img-top" alt="...">
+                              <p class="card-text"><small class="text-muted">
+                                  Estado: {{item.regioes}}
+                                </small></p>
+                              <p class="card-text"><small class="text-muted">
+                                  {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
+                                </small></p>
+      
+                              <p class="card-text"><small class="text-muted">
+                                  by: {{item.usuario.nome}}
+                                </small></p>
+                              <div class="">
+                                <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-5" href=""><img src="https://i.imgur.com/2EdPKSx.png" alt=""></a>
+                                <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href=""><img src="https://i.imgur.com/BkkFvIm.png" alt=""></a>
+                              </div>               
+      
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                  
                 </form>
               </div>
             </div>
-           
-
-            <!-- Nav-Feed-->
-            <div class="feed">
-              <ul class="nav nav-tabs nav-feed" id="postagemCategoria" role="tablist"
-                aria-labelledby="nav-postagemCategoria-tab">
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link active nav-link-1" id="nav-todasPostagens-tab" data-bs-toggle="tab"
-                    href="#todasPostagens" role="tab" aria-controls="home" aria-selected="true"><i
-                      class="bi bi-grid-3x3"></i> TODAS AS POSTAGENS</a>
-                </li>
-
-                <li class="nav-item" role="presentation">
-                  <a (click)='findByIdUser()' class="nav-link nav-link-2" id="nav-minhasPostagens-tab"
-                    data-bs-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens"
-                    aria-selected="false"><i class="bi bi-file-person"></i> MINHAS POSTAGENS</a>
-
-                </li>
-              </ul>
-
-              <!-- Card-Feed-->
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
-                  aria-labelledby="nav-todasPostagens-tab">
-                  <div class="row" style="padding-bottom: 25px;">
-
-
-
-                    <div class="col-10 ">
-                      <div class="card text-center" *ngFor='let item of listaPostagens | orderBy : key : reverse'>
-
-
-                        <h5 class="card-title m-0">{{item.titulo}}</h5>
-                        <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
-                        <p class="card-text mt-3">{{item.texto}}</p>
-                        <img src="images/post1.png" class="card-img-top" alt="...">
-                        <p class="card-text"><small class="text-muted">
-                            Estado: {{item.regioes}}
-                          </small></p>
-                        <p class="card-text"><small class="text-muted">
-                            {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
-                          </small></p>
-
-                        <p class="card-text"><small class="text-muted">
-                            by: {{item.usuario.nome}}
-                          </small></p>
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-              </div>
-            </div>
+            
+            
           </div>
           <div class="col-0 col-md-2"></div>
         </div>
