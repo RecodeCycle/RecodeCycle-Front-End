@@ -103,69 +103,58 @@
 </div>
 
 
+<section class=" bground" id="contato">
+  <!-- Contato -->
+  <div class="container mb-5">
+      <h2 class="pt3 pb-3">Deixe uma sugestão</h2>
 
-<div class="section">
-  <div class="container">
-    <div class="contactinfo">
-     
-      <div>
-        <h2>Contato</h2>
-        <ul class="info">
-          <li>
-            <span><img class="imgIcon" src="https://i.imgur.com/YuFUb8g.png" alt=""></span>
-            <span> Brasil - São Paulo</span>
-          </li>
-          <li>
-            <span><img class="imgIcon" src="https://i.imgur.com/LWMwRGf.png" alt=""></span>
-            <span> lorem@ipsum.com</span>
-          </li>
-          <li>
-            <span><img class="imgIcon" src="https://i.imgur.com/GUCQWnh.png" alt=""></span>
-            <span> 999999-99999</span>
-          </li>
-        </ul>
+      <div class="row">
+        <div class="col-md-5">
+            <div class="card p-5 shadow border-0" data-anime="up">
+                <div class="endereco">
+                    <h4><i class="bi bi-geo-alt"></i> Localização</h4>
+                    <p>São Paulo, SP</p>
+                </div>
+
+                <div class="email">
+                  <h4><i class="bi bi-envelope"></i> Email</h4>
+                  <p>recodecycle@gmail.com</p>
+                </div>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467689.7971944828!2d-46.8754915172196!3d-23.68216038895823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1632426231183!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-100"></iframe>
+            </div>
+
+        </div>
+        <div class="col-md-7 mt-5 mt-md-0">
+            <div class="card p-5 h-100 shadow border-0" data-anime="left">
+              <form class="row g-3" action='/send' method="POST">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+                  </div>
+                  
+                  <div class="col-md-12">
+                    <label for="mensagem" class="form-label">Mensagem:</label>
+                    <textarea type="text" class="form-control" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="10" required></textarea>
+                  </div>
+                  
+                  <div class="col-12 d-flex justify-content-center mt-4">
+                      <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
+                          mensagem</button>
+
+                     
+                  </div>
+
+                </form>
+            </div>
+        </div>
       </div>
-      <ul class="sci">
-        <li><a href="#"><img class="imgIcon" src="https://i.imgur.com/79VdJgU.png" alt="logos redes 1.png"></a></li>
 
-      </ul>
-    </div>
-
-    <div class="contactForm">
-      <h2>Mensagem</h2>
-      <div class="formBox">
-        <div class="inputBox w50">
-          <input type="text" name="" required>
-          <span>Nome</span>
-        </div>
-
-        <div class="inputBox w50">
-          <input type="text" name="" required>
-          <span>Sobrenome</span>
-        </div>
-
-        <div class="inputBox w50">
-          <input type="text" name="" required>
-          <span>Email</span>
-        </div>
-
-        <div class="inputBox w50">
-          <input type="text" name="" required>
-          <span>Telefone</span>
-        </div>
-
-        <div class="inputBox w100">
-          <textarea name="" required></textarea>
-          <span>Escreva mensagem</span>
-
-        </div>
-
-        <div class="inputBox w100">
-          <input type="submit" value="Send">
-        </div>
-
-      </div>
-    </div>
   </div>
-</div>
+  <!-- /Contato -->
+</section>
 
