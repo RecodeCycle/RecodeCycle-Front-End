@@ -266,8 +266,27 @@
                                 </small>
                               </p>
                               
+                              <div class="">
+                                
+                                <a  class="mr-3"(click)='getPostagemByid(item.id)' (click)='descurtida(item.id)'>
+                                 <img src="https://i.imgur.com/TXa0kPn.png" alt="">
+                                </a>
+
+                              
+
+                                <a  (click)='getPostagemByid(item.id)' (click)='curtida(item.id)'>
+                                  <img src="https://i.imgur.com/cIdZat9.png" alt="">
+                                </a>
+
+                              </div>
+                            
+                            <small class="text-muted">
+
+                            </small>
+                              Curtidas: {{item.curtidas}}
 
                                 <hr>
+      
       
                             </div>
                           </div>
