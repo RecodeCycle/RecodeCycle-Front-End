@@ -245,15 +245,27 @@
                               <h5 class="card-title m-0">{{item.titulo}}</h5>
                               <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
                               <p class="card-text mt-3">{{item.texto}}</p>
-                              <img src="images/post1.png" class="card-img-top" alt="...">
                               <p class="card-text"><small class="text-muted">
-                                  Estado: {{item.regioes}}
-                                </small></p>
-                              <p class="card-text"><small class="text-muted">
-                                  {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
-                                </small></p>
-      
-    
+                                <img src="{{item.fotoPostagem}}" width="60%" height="px"
+                                class="img-fluid  my-2" alt="">
+                                                      
+                              </small></p>
+
+                              
+                              <p class="card-text ">
+                                <small class="text-muted">
+                                  
+                                 
+                                  <p class="card-text">
+                                   Estado: {{item.regioes}} | {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}  
+                                  </p>
+                                  <p class="card-text">
+                                   
+                                  </p>
+
+                                </small>
+                              </p>
+                              
 
                                 <hr>
       
@@ -272,13 +284,26 @@
                               <h5 class="card-title my-2">{{item.titulo}}</h5>
                               <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
                               <p class="card-text mt-3">{{item.texto}}</p>
-                              <img src="images/post1.png" class="card-img-top" alt="...">
                               <p class="card-text"><small class="text-muted">
-                                  Estado: {{item.regioes}}
-                                </small></p>
-                              <p class="card-text"><small class="text-muted">
-                                  {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
-                                </small></p>
+                                <img src="{{item.fotoPostagem}}" width="60%" height="px"
+                                class="img-fluid  my-2" alt="">
+                                                      
+                              </small></p>
+
+                              
+                              <p class="card-text ">
+                                <small class="text-muted">
+                                  
+                                 
+                                  <p class="card-text">
+                                   Estado: {{item.regioes}} | {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}  
+                                  </p>
+                                  <p class="card-text">
+                                   
+                                  </p>
+
+                                </small>
+                              </p>
       
                           
                                 <div class="">
@@ -374,6 +399,12 @@
         <div class="form-group">
           <label for="texto">Texto</label>
           <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="texto">Foto da postagem</label>
+          <input [(ngModel)]='postagem.fotoPostagem' class="form-control" name="fotoPostagem" id="fotoPostagem"
+            placeholder="Insira um link para postar foto">
         </div>
 
         <div class="form-group">

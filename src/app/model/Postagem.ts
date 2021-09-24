@@ -12,4 +12,5 @@ export class Postagem {
   public curtidas: string;
   public categoria: Categoria;
   public usuario: Usuario;
+  public fotoPostagem: string;
 }
