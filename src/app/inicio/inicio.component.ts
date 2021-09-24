@@ -34,6 +34,8 @@ export class InicioComponent implements OnInit {
   foto = environment.fotoPerfil
   nome = environment.nome
   id = environment.id
+  
+  idPostagem: Postagem;
 
   constructor(
     private router: Router,
@@ -128,5 +130,24 @@ export class InicioComponent implements OnInit {
       })
     }
 
+  }
+
+  getPostagemByid(id: number){
+    this.postagemService.getByIdPostagem(id).subscribe((resp: Postagem) =>{
+    this.idPostagem = resp
+    })
+  }
+
+  curtida(id: number){
+    this.postagemService.putCurtir(id).subscribe(() => {
+      this.getAllPostagens()
+    })
+
+  }
+
+  descurtida(id: number){
+   this.postagemService.putDescurtir(id).subscribe(() => {
+     this.getAllPostagens()
+   })
   }
 }
