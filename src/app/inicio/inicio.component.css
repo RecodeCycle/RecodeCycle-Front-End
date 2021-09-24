@@ -35,6 +35,9 @@
       padding-left: 5% !important; 
       padding-right: 5% !important;
   }
+  .sidebar{
+    display: none;
+  }
 }
 
 .img-nav {

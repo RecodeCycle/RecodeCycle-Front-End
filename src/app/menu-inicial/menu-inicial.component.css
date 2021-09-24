@@ -1,5 +1,29 @@
-.bg-1 {
-  background: linear-gradient(
-    to bottom,
-    #048184,  #239383 );
+.bground {
+  background: #111E54;
 }
+
+.nav-bar-inicio{
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-bar-inicio{
+    display: block;
+  }
+}
+.btn1{
+  cursor: pointer;
+}
+
+a{
+  color: #92C1FF;
+}
+
+#butcolor{
+  background: #92C1FF;
+}
+
+#butcolor span {
+  background-color: #111E54;
+}
+

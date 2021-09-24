@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { Usuario } from '../model/Usuario';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-menu-inicial',
@@ -9,11 +11,19 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class MenuInicialComponent implements OnInit {
 
+  user: Usuario = new Usuario();
+  idUser = environment.id;
+
+  key : 'data'
+  reverse = true
+
   nome = environment.nome
   foto = environment.fotoPerfil
   id = environment.id
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private authService: AuthService) { }
 
   ngOnInit() {
   }
