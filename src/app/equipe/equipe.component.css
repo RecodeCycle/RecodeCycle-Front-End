@@ -302,6 +302,14 @@ padding: 12px;
 .section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
 background: #ff568c;
 }
+@media (max-width: 992px) {
+  .img-mobile{
+    display: none;
+  }
+  section {
+    display: inline;
+  }
+}
 
 
 /* formulário de contato */

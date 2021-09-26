@@ -79,7 +79,8 @@
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="#" routerLink='/home'>Home<span class="sr-only">(página atual)</span></a> -->
-            <a [routerLink]="['/usuario-edit', id]"><p class=" fs-16 m-0">Editar Usuario</p></a>
+            <a
+            data-toggle="modal" data-target="#modalExemplo" [routerLink]="['/usuario-edit', id]"><p class=" fs-16 m-0">Editar Usuario</p></a>
           </li>
         </ul>
         

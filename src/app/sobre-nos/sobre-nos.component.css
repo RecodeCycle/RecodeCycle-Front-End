@@ -44,5 +44,11 @@
   align-items: center;
   height: 50%;
   width: 50%;
- 
+}
+
+@media (max-width: 992px) {
+  .img-mobile{
+    display: none;
+  }
+  
 }
