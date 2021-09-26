@@ -10,9 +10,11 @@
     margin-right: auto;
     padding: 0 10px;
 }
+menu-inicial{
+  display: none;
+}
 
 .a:hover
-
 .nav-top {
   height: 63px; 
   background-color: white !important; 

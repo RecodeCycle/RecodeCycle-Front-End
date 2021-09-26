@@ -1,3 +1,38 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                         INICIO DA NAV HOME                              -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="nav-bar-home" *ngIf='auth.logado()'>
+  <nav class="navbar navbar-expand-lg navground">
+    <a class="nav-item active">
+      <img src="https://imgur.com/d5ke0ud.jpeg" alt="Logo do Blog" width="50px" height="50px"
+        class="img-fluid rounded-circle"/>
+    </a>
+    <a class="navbar-brand " href="#">RecodeCycle</a>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLink='/inicio' class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink='/home' class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink='/sobre-nos'>Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/equipe'>Equipe</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                           FIM DA NAV HOME                               -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
 <div class="container-fluid max min bground ">
   <div class="row  d-flex align-items-center">
     <div class="col-md-6">
@@ -35,12 +70,8 @@
           </div>
           <div class="card-body">
             <p class="card-text text-center">Lição importante da Educação Financeira: antes de consumir um produto, pense na sua real necessidade e no resíduo que poderá ser gerado. Você realmente precisa do que está comprando? Se você compra algo novo, o que faz com o antigo? Este é um momento para refletir sobre seus hábitos.</p>
-            
           </div>
           <img class="card-img-top mx-auto" src="https://i.imgur.com/GQmaraf.png" >
-          
-           
-    
         </div>
     
     
@@ -55,7 +86,7 @@
           </div>
           <img class="card-img-top mx-auto" src="https://i.imgur.com/HmFhyPg.png" alt="Imagem de capa do card">
         </div>
-    
+
         <div class="card">
           <div class="card-footer">
             <small class="text-muted text-center title">
@@ -65,7 +96,7 @@
           <div class="card-body">
             <p class="card-text text-center">Diferentemente do reaproveitamento do lixo, o trabalho com reciclagem de materiais requer um processo industrial que irá transformar um resíduo em um novo produto. Esta opção diminui a necessidade de explorar novos recursos na natureza, custa mais barato do que produzir da maneira tradicional, já que exige menos energia e insumos, e gera emprego e renda para a população.</p>
           </div>
-           <img class="card-img-top mx-auto" src="https://i.imgur.com/KMeDDfX.png" alt="Imagem de capa do card">
+            <img class="card-img-top mx-auto" src="https://i.imgur.com/KMeDDfX.png" alt="Imagem de capa do card">
         </div>
       </div>
     </div>

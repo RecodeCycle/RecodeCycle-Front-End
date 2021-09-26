@@ -35,6 +35,5 @@ export class MenuInicialComponent implements OnInit {
     environment.fotoPerfil = ""
     environment.id = 0
   }
-
+  
 }
-

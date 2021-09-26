@@ -4,7 +4,8 @@
 
 .nav-bar-inicio{
   display: none;
-}
+} 
+
 
 @media screen and (max-width: 992px) {
   .nav-bar-inicio{

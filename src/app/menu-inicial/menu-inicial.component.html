@@ -80,13 +80,14 @@
           <li class="nav-item">
             <!-- <a class="nav-link" href="#" routerLink='/home'>Home<span class="sr-only">(página atual)</span></a> -->
             <a
-            data-toggle="modal" data-target="#modalExemplo" [routerLink]="['/usuario-edit', id]"><p class=" fs-16 m-0">Editar Usuario</p></a>
+            data-toggle="modal" class="nav-link" data-target="#modalExemplo" [routerLink]="['/usuario-edit', id]"><p class=" fs-16 m-0">Editar Usuario</p></a>
           </li>
+          <form class="form-inline my-2 my-lg-0">
+            <a class=" btn-outline text-white btn1 nav-link my-2 my-sm-0 mr-4" (click)="sair()" >Sair</a>
+          </form>
         </ul>
         
-        <form class="form-inline my-2 my-lg-0">
-          <a class=" btn-outline text-white btn1 my-2 my-sm-0 mr-4" (click)="sair()" >Sair</a>
-        </form>
+        
       </div>
     </nav>
   </main>
