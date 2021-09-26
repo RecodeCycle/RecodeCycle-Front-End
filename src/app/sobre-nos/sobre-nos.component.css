@@ -5,22 +5,16 @@
   background: #111E54;
 }
 
-/* .nav-bar-home{
-  display: none;
-}  */
-
-
-@media screen and (max-width: 992px) {
-  .nav-bar-home{
-    display: none;
-  }
-}
 .btn1{
   cursor: pointer;
 }
 
-a{
+.textnav{
   color: #92C1FF;
+}
+
+.textnav:hover{
+  color: #f7f7f7;
 }
 
 #butcolor{
@@ -31,6 +25,11 @@ a{
   background-color: #111E54;
 }
 
+@media screen and (max-width: 992px) {
+  .nav-bar-home{
+    display: none;
+  }
+}
 /* ---------------------------------------------------------------------------------------------
                                               //NAVBAR
 ------------------------------------------------------------------------------------------------*/
