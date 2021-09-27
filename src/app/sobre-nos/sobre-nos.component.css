@@ -81,15 +81,9 @@ font-size: 150%;
 
 }
 
-
 hr{
 background-color: #111E54;
 }
-
-
-/* p:hover{
-color: #ffffff
-} */
 
 .img-click{
 align-items: center;
@@ -97,6 +91,3 @@ height: 50%;
 width: 50%;
 
 }
-/*.card-body{
-display: hidden;
-}*/
