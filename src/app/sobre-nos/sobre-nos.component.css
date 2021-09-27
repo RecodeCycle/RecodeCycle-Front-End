@@ -1,48 +1,102 @@
 .bground {
-    height: 100%;
-    background: #92C1FF;
-    
-  }
+  height: 100%;
+  background: #92C1FF;
   
-  .tamanho-card{
-    width: 55rem;
-    height: 15rem;
-  }
+}
 
-  .card-img-top {
-    height: 60vh;
-    width: 90%;
-    align-items: center;
-  
-  }
+.tamanho-card{
+  width: 55rem;
+  height: 15rem;
+}
+
+.card-img-top {
+  height: 60vh;
+  width: 90%;
+  align-items: center;
+
+}
+
+.card{
+  border: double;
+  border-color: cadetblue;
+ 
+}
+
+.card-title1{
+  color: darkgreen;
+  font-size: 200%;
+}
+
+.card-title2{
+  color:darkred;
+  font-size: 200%;
+}
+
+.card-title3{
+  color:darkorange;
+  font-size: 200%;
+}
+
+p{
+  color: darkslategray;
+  font-size: 120%;
+}
 
 
 .card:hover{
-  background: #B5F6CF;
+background: #B5F6CF;
 }
 
 .fs-54{
-  font-size: 363%;
-  color: whitesmoke;
+font-size: 363%;
+color: #111E54;
 
 }
 
 
 .max h1{
-  font-size: max(60px, 5vw);
+font-size: max(60px, 5vw);
 }
 
 .min{
-  font-size: 16px;
+font-size: 16px;
 }
 
+
+.min2{
+font-size: 20px;
+}
+
+.min3{
+font-size: 32px;
+}
+
+h1, h2 {
+color: #111E54;
+}
+
+.p1{
+color: #111E54;
+font-size: 150%;
+
+}
+
+
+hr{
+background-color: #111E54;
+}
+
+
 /* p:hover{
-  color: #ffffff
+color: #ffffff
 } */
 
 .img-click{
-  align-items: center;
-  height: 50%;
-  width: 50%;
- 
+align-items: center;
+height: 50%;
+width: 50%;
+
 }
+/*.card-body{
+display: hidden;
+}*/
