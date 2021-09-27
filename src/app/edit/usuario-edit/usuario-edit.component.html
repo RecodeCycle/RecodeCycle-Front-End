@@ -1,136 +1,78 @@
-<!-- <div class="container mb-5 mt-5">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center text-secondary mb-5">Atualizar meu usuário</h1>
-        </div>
-    </div>
-
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-10">
-    
-            <div class="form-group d-flex">
-                <div class="w-50 mr-3">
-                <input class="form-control shadow-lg" type="text" name="nome" id="nome" placeholder="Nome"  [(ngModel)]="usuario.nome">
-            </div>
-            <div class="w-50">
-                <input class="form-control shadow-lg" type="text" name="usuário" id="usuário"
-                    placeholder="Email" [(ngModel)]="usuario.email" >
-            </div>
-            </div>
-
-            <div class="form-group d-flex">
-            <div class="form-group my-3 w-50 mr-3">
-                <input class="form-control shadow-lg" type="text" name="telefone" id="telefone"
-                    placeholder="Telefone"  [(ngModel)]="usuario.telefone">
-            </div>
-
-            <div class="form-group my-3 w-50">
-                <input class="form-control shadow-lg" type="text" name="fotoPerfil" id="fotoPerfil"
-                    placeholder="Insira link da foto de perfil"  [(ngModel)]="usuario.fotoPerfil">
-            </div>
-            </div>
-
-            <div class="form-group d-flex">
-                <div class="w-50 mr-3">
-                <input class="form-control shadow-lg" type="password" name="senha" id="senha"
-                    placeholder="Senha" (input)="confirmSenha($event)"
-                    >
-                </div>
-                <div class="w-50">
-                <input class="form-control shadow-lg" type="password" name="confirmSenha" id="confirmSenha"
-                    placeholder="Confirme sua senha"  [(ngModel)]="usuario.senha">
-            </div>
-            </div>
-
-            
-            <div class="form-group my-4">
-                <select class="form-control shadow-lg" name="tipo" id="tipo" (change)="tipoAdmin($event)"
-              >
-                    <option>Selecione seu perfil:</option>
-                    <option value="normal">Usuário</option>
-                    <option value="admin">Administrador</option>
-                </select>
-            </div>
-    
-            <div class="d-flex justify-content-center my-3">
-                <button type="submit" class="btn btn-danger mr-4" routerLink="/inicio">Cancelar</button>
-                <button type="submit" class="btn btn-success" (click)="atualizar()">Atualizar</button>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 <!-- !-- Modal --> 
 <div  class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Atualizar Perfil</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-10">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="{{foto}}" alt="Imagem da usuário" width="25%" height="px"
+        class="img-fluid rounded-circle my-0" />
+        <h5 class="modal-title text-center ml-3" id="exampleModalLabel"> <br> <br> Atualizar Perfil</h5>
         
-                <div class="form-group my-">
-                    <label for="nome">Nome</label>
-                    <input class="form-control shadow-lg" type="text" name="nome" id="nome" placeholder="Nome"  [(ngModel)]="usuario.nome">
-                </div>
-    
-                <div class="form-group ">
-                  <label for="email">Email</label>
-                    <input class="form-control shadow-lg" type="text" name="usuário" id="usuário"
-                        placeholder="Email" [(ngModel)]="usuario.email" >
-                </div>
-    
-                <div class="form-group ">
-                  <label for="telefone">Telefone</label>
-                    <input class="form-control shadow-lg" type="text" name="telefone" id="telefone"
-                        placeholder="Telefone"  [(ngModel)]="usuario.telefone">
-                </div>
-    
-                <div class="form-group">
-                  <label for="fotoPerfil">Foto de Perfil</label>
-                    <input class="form-control shadow-lg" type="text" name="fotoPerfil" id="fotoPerfil"
-                        placeholder="Insira link da foto de perfil"  [(ngModel)]="usuario.fotoPerfil">
-                </div>
-    
-                <div class="form-group">
-                  <label for="senha">Senha</label>
-                    <input class="form-control shadow-lg" type="password" name="senha" id="senha"
-                        placeholder="Senha" (input)="confirmSenha($event)"
-                        >
-                </div>
-    
-    
-                <div class="form-group">
-                  <label for="confirmSenha">Confirme sua senha</label>
-                    <input class="form-control shadow-lg" type="password" name="confirmSenha" id="confirmSenha"
-                        placeholder="Confirme sua senha"  [(ngModel)]="usuario.senha">
-                </div>
-    
-                <div class="form-group">
-                    <select class="form-control shadow-lg" name="tipo" id="tipo" (change)="tipoAdmin($event)"
-                  >
-                        <option>Selecione seu perfil:</option>
-                        <option value="normal">Usuário</option>
-                        <option value="admin">Administrador</option>
-                    </select>
-                </div>
-        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10">
       
-            </div>
-        </div>
-        </div>
-        <div class="modal-footer">
-         
-          <button type="button" class="btn btn-danger" data-dismiss="modal" routerLink="/inicio">Cancelar</button>
-          <button type="submit" class="btn btn-success" data-dismiss="modal" (click)="atualizar()">Salvar mudanças</button>
-        </div>
+              <div class="form-group my-">
+                  <label for="nome">Nome</label>
+                  <input class="form-control shadow-lg" type="text" name="nome" id="nome" placeholder="Nome"  [(ngModel)]="usuario.nome">
+              </div>
+  
+              <div class="form-group ">
+                <label for="email">Email</label>
+                  <input class="form-control shadow-lg" type="text" name="usuário" id="usuário"
+                      placeholder="Email" [(ngModel)]="usuario.email" >
+              </div>
+  
+              <div class="form-group ">
+                <label for="telefone">Telefone</label>
+                  <input class="form-control shadow-lg" type="text" name="telefone" id="telefone"
+                      placeholder="Telefone"  [(ngModel)]="usuario.telefone">
+              </div>
+  
+              <div class="form-group">
+                <label for="fotoPerfil">Foto de Perfil</label>
+                  <input class="form-control shadow-lg" type="text" name="fotoPerfil" id="fotoPerfil"
+                      placeholder="Insira link da foto de perfil"  [(ngModel)]="usuario.fotoPerfil">
+              </div>
+  
+              <div class="form-group">
+                <label for="senha">Senha</label>
+                  <input class="form-control shadow-lg" type="password" name="senha" id="senha"
+                      placeholder="Senha" (input)="confirmSenha($event)"
+                      >
+              </div>
+  
+  
+              <div class="form-group">
+                <label for="confirmSenha">Confirme sua senha</label>
+                  <input class="form-control shadow-lg" type="password" name="confirmSenha" id="confirmSenha"
+                      placeholder="Confirme sua senha"  [(ngModel)]="usuario.senha">
+              </div>
+  
+              <div class="form-group">
+                  <select class="form-control shadow-lg" name="tipo" id="tipo" (change)="tipoAdmin($event)"
+                >
+                      <option>Selecione seu perfil:</option>
+                      <option value="normal">Usuário</option>
+                      <option value="admin">Administrador</option>
+                  </select>
+              </div>
+      
+    
+          </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-danger" data-dismiss="modal" routerLink="/inicio">Cancelar</button>
+        <button type="submit" class="btn btn-success" data-dismiss="modal" (click)="atualizar()">Salvar mudanças</button>
       </div>
     </div>
   </div>
-  
-  
+</div>
+
+
+

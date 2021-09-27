@@ -109,6 +109,7 @@
 
 <body class="body container-fluid body-sidebar">
 
+
 <body class="container-fluid body-sidebar bground">
   
  
@@ -264,9 +265,6 @@
                                     <p class="card-text">
                                      Estado: {{item.regioes}} | {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}  
                                     </p>
-                                    <p class="card-text">
-                                     
-                                    </p>
   
                                   </small>
                                 </p>
@@ -285,10 +283,10 @@
   
                                 </div>
                               
-                              <small class="text-muted">
-  
-                              </small>
-                                Curtidas: {{item.curtidas}}
+                                  <small class="text-muted">
+                                    Curtidas: {{item.curtidas}}
+                                  </small>
+                                  
   
                                   <hr>
         
@@ -302,22 +300,36 @@
                         <div class="tab-pane fade show active" id="minhasPostagens" role="tabpanel"
                           aria-labelledby="nav-minhasPostagens-tab">
                           <div class="row" style="padding-bottom: 25px;">
-                            <div class="col-10 ">
+                            <div class="col-12 ">
                               <div class="card text-center" *ngFor='let item of user.postagem '>
                                 
-                                <h5 class="card-title m-0">{{item.titulo}}</h5>
+                                
+                               
                                 <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
                                 <small class="text-muted"> Resíduos: {{item.residuos}}</small>
+                                <h5 class="card-title m-0">{{item.titulo}}</h5>
                                 <p class="card-text mt-3">{{item.texto}}</p>
-                                <img src="images/post1.png" class="card-img-top" alt="...">
                                 <p class="card-text"><small class="text-muted">
-                                    Estado: {{item.regioes}}
-                                  </small></p>
-                                <p class="card-text"><small class="text-muted">
-                                    {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}
-                                  </small></p>
-        
-                            
+                                  <img src="{{item.fotoPostagem}}" width="60%" height="px"
+                                  class="img-fluid  my-2" alt="">
+                                                        
+                                </small></p>
+
+                                <p class="card-text ">
+                                  <small class="text-muted">
+                                    
+                                   
+                                    <p class="card-text">
+                                     Estado: {{item.regioes}} | {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date: 'HH:mm'}}  
+                                    </p>
+                                    <p class="card-text">
+                                      Curtidas: {{item.curtidas}}
+                                    </p>
+  
+                                  </small>
+                                </p>
+                        
+                               
                                 <div class="">
                                   <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-5" href="" data-toggle="modal" data-target="#modalExemplo"><img src="https://i.imgur.com/2EdPKSx.png" alt=""></a>
                                   <a [routerLink]="['/postagem-delete', item.id]" type="button" class="text-danger" href="" data-toggle="modal" data-target="#modalExemplo"><img src="https://i.imgur.com/BkkFvIm.png" alt=""></a>
@@ -358,7 +370,7 @@
         </div>
       </div>
 
-      <div class="col-12 barraPesquisar">
+      <!-- <div class="col-12 barraPesquisar">
         
           <div class="barraPesquisar-input">
             <span class="material-icons widgets__serarchIcon"> search</span>
@@ -367,7 +379,7 @@
 
             
       
-      </div>
+      </div> -->
 
      
 
