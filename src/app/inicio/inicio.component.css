@@ -106,10 +106,52 @@ menu-inicial{
 }
 
 .Bvd{
- background: forestgreen;
- color: white;
- border-radius: 35px;
- padding: 5px 8px;
+background: forestgreen;
+color: white;
+border-radius: 35px;
+padding: 5px 8px;
+}
+@media screen and (max-width: 999px) {
+  #div-card{
+    top: -810px 
+  }
+
+.username{
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+}
+  
+.bvd2{
+  align-self: center;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  border-radius: 15px;
+  background: #58af9b;
+}
+
+.cardPerfil{
+  height:17%;
+  width: 100%;
+  border-radius: 4px 4px;
+  
+}
+.card2{
+  width: 100%;
+  justify-items: center;
+  text-align: center;
+  height: inherit;
+}
+.cardFeed{
+  width: 100%;
+  border-radius: 4px 4px;
+}
+
+}
+
+.img-media{
+  width: 4rem;
 }
 
 
@@ -295,23 +337,68 @@ body{
 
 /*widgets*/
 
-.barraPesquisar{
-  justify-content: flex-end;
-  right:-43rem;
-  top: -814px;
- 
-
+.input-mobile{
+  display: none;
   
+
+}
+
+.input-mobile2{
+  display: flex;
+  align-items: flex;
+  background-color: #f7f7f7;
+  width: 200%;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .input-mobile{
+    display: grid;
+    justify-content: start;
+
+  }
+  
+  .input-mobile2{
+    display: flex;
+    align-items: flex;
+    background-color: #f7f7f7;
+    width: 170%;
+    border-radius: 15px;
+    padding: 10px;
+    
+  
+  }
+}
+
+.barraPesquisar{
+  justify-content: start;
+  right:-43rem;
+  top: -797px;
+  display: grid;
+}
+@media (min-width: 1338px) {
+  .barraPesquisar{
+    justify-content: start;
+    right:-43rem;
+    top: -810px;
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .barraPesquisar{
+    display: none;
+}
 }
 
 .barraPesquisar-input{
   display: flex;
-  align-items: flex-end;
+  align-items: flex;
   background-color: #f7f7f7;
-  width: 35%;
+  width: 200%;
   border-radius: 15px;
   padding: 10px;
-
 }
 
 .inputPesquisar{
@@ -323,6 +410,13 @@ body{
 
 .widgets__serarchIcon{
   color: gray;
+}
+
+
+/* modal background */
+
+.mground{
+  background-image: linear-gradient(to top, #f7f7f7 10%,#B5F6CF );
 }
 
 

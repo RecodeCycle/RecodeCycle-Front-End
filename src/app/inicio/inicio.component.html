@@ -2,7 +2,7 @@
   
  
 
-  <div class="cardSidebar  sidebar">
+  <div class="cardSidebar sidebar" >
     
     <div class="sidebarOption ">
       <span class="material-icons"> home</span>
@@ -43,14 +43,15 @@
   
     <!-- Main-->
     <section>
-      <div class="container">
+      <div class="container" id="div-card"
+      >
 
         
         <div class="row">
     
          
 
-          <div class="col-12 col-md-8">
+          <div class="col-md-8">
            
 
             <!-- Profile-->
@@ -58,15 +59,15 @@
               <div class="row" style="padding-top: 20px;">
                 <div class="col-3 my-2">
                   <img src="{{foto}}" alt="Imagem da usuária" width="100%" height="px"
-                    class="img-fluid rounded-circle" />
+                    class="img-fluid profile-media rounded-circle" />
                 </div>
                 
                 <div class="col-7">
-                  <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
-                    <div class="col-8 col-lg-12">
+                  <div class="row">
+                    <div class=" col-12">
                       <h2 class="username">Olá, {{nome}}!</h2>
-                      <small class="Bvd">Bem vindo ao RecodeCycle <img src="https://i.imgur.com/d5ke0ud.png" width="20%" height="px"
-                        class="img-fluid rounded-circle" alt=""/></small>
+                      <small class="Bvd bvd2">Bem vindo ao RecodeCycle <img src="https://i.imgur.com/d5ke0ud.png" 
+                        class="img-fluid img-media rounded-circle" alt=""/></small>
                       
                       
                     </div>
@@ -83,7 +84,7 @@
 
            
 
-            <div class="cardPerfil container my-3">
+            <div class="cardPerfil card2 container my-3">
               <div class="row" style="padding-top: 20px;">
                 <div class="col-8 my-2">
                   <p>Compartilhe conosco suas experiências! <button class="btn btn-second" data-toggle="modal" data-target="#novaPostagem"> Publicar</button></p>
@@ -94,6 +95,16 @@
 
               </div>
             </div>
+
+            <div class="input-mobile my-2">
+        
+              <div class="input-mobile2">
+                <span class="material-icons widgets__serarchIcon"> search</span>
+                <input class="form-control inputPesquisar" type="text" placeholder="Digite um titulo para pesquisar" [(ngModel)]='tituloPostagem' (keyup)='findByTituloPostagem()'>
+              </div>
+                
+          
+          </div>
 
             <div class="cardFeed container">
               <div class="row">
@@ -258,37 +269,21 @@
         </div>
       </div>
 
-      <!-- <div class="col-12 barraPesquisar">
+      
+      <div class="col-md-2 barraPesquisar">
         
           <div class="barraPesquisar-input">
             <span class="material-icons widgets__serarchIcon"> search</span>
-            <input class="form-control inputPesquisar" type="text" placeholder="Digite um titulo de postagem para pesquisar" [(ngModel)]='tituloPostagem' (keyup)='findByTituloPostagem()'>
+            <input class="form-control inputPesquisar" type="text" placeholder="Digite um titulo para pesquisar" [(ngModel)]='tituloPostagem' (keyup)='findByTituloPostagem()'>
           </div>
             
       
-      </div> -->
+      </div>
 
-     
-
-          
-    
+      
     </section>
 
-
-   
-     
- 
-
     
-
-   
-   
-
-  
-    
-    
-  
-
 
   <script type="text/javascript">
 
@@ -338,7 +333,7 @@
 <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal-content mground">
       <div class="modal-header">
         <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
