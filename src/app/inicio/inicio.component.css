@@ -1,15 +1,14 @@
-.body {
-  background-color: #fafafa;
+.bground {
+  height: 100%;
+  background:#B5F6CF;
+  
 }
 
 .body-sidebar{
-    display: flex;
-    height: 100vh;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 10px;
+  display: flex;
+  
 }
+
 menu-inicial{
   display: none;
 }
@@ -44,23 +43,6 @@ menu-inicial{
   }
 }
 
-.img-nav {
-  border-radius: 100%;
-  -o-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%; 
-  max-width:30px; 
-  max-height:25px;
-}
-
-.img-profile {
-  border-radius: 100%;
-  -o-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%; 
-  max-width:200px; 
-  max-height:150px;
-}
 
 .username {
   font-weight: 300; font-size: 28px;
@@ -78,26 +60,79 @@ menu-inicial{
   font-size: 16px; 
 }
 
-.sidebarOption{
+.cardSidebar{
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  width: 70%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 
+}
+
+.cardPerfil{
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  width: 90%;
+
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+}
+
+.cardAlert{
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  width: 95%;
+  height: 5%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  
+
+}
+
+.cardFeed{
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  width: 90%;
+
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+}
+
+.Bvd{
+ background: forestgreen;
+ color: white;
+ border-radius: 35px;
+ padding: 5px 8px;
+}
+
+
+
+.sidebarOption{
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.sidebarOption .material-icons, .fa-twitter{
+.sidebarOption .material-icons{
     padding: 20px;
-
 }
 
 .sidebarOption h2{
+    color: black;
     font-weight: 800;
     font-size: 20px;
     margin-right: 20px;
 }
 
 .sidebarOption:hover{
-     background-color: var(--twitter-background);
+     background-color: var(--background);
      border-radius: 30px;
      color: var(--twitter-color);
      transition: color 100ms ease-out;
@@ -107,7 +142,7 @@ menu-inicial{
 
 .sidebar__tweet{
     width: 100%;
-    background-color: var(--twitter-color);
+    background-color: var(--color);
     border: none;
     color: white;
     font-weight: 900;
@@ -117,7 +152,7 @@ menu-inicial{
 }
 
 .sidebar {
-  border-right: 1px solid var(--twitter-color);
+  border-right: 1px solid var();
   flex: 0.2;
   min-width: 250px;
   margin-top: 20px;
@@ -131,6 +166,7 @@ menu-inicial{
   align-items: center;
   justify-content: center;
   padding-bottom: 15px;
+  
  
  
 }
@@ -140,41 +176,7 @@ menu-inicial{
   overflow-y: scroll;
 }
 
-/* tweet box */
 
-.tweetBox { /*BOTÃO PUBLICAR*/
-  padding-bottom: 10px;
-  border-bottom: 8px solid var(--twitter-background);
-  padding-right: 10px;
-}
-
-.tweetBox form {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.tweetbox__input {
- display: flex;
- padding: 20px;
- border-radius: 15px;
- 
-}
-
-
-
-.tweetBox__tweetButton{
- background-color:#92C1FF;
- border: none;
- color: white;
- font-weight: 900;
- border-radius: 30px;
- width: 80px;
- height: 40px;
- margin-top: 20px;
- margin-left: auto;
-
-}
 
 .btn {
   border-radius: 15px;
@@ -202,13 +204,13 @@ menu-inicial{
 }
 
 body{
-  --twitter-color: #50b7f5;
-  --twitter-background: #e6ecf0;
+  --color:#58af9b;
+  --background: #e6ecf0;
 }
 
 .feed{
   flex: 0.5;
-  border-right: 1px solid var(--twitter-background);
+  border-right: 1px solid var(--background);
   min-width: fit-content;
   overflow-y: scroll;
 }
@@ -218,7 +220,7 @@ body{
   top: 0;
   background-color: white;
   z-index: 100;
-  border: 1px solid var(--twitter-background);
+  border: 1px solid var(--background);
   padding: 5px 10px;
 }
 
@@ -233,14 +235,15 @@ body{
 }
 
 
+.a:hover
 
+.curtir{
+  cursor: pointer;
+}
 
 .nav-link-1 {
-  color: #495057;
+  color: #a2a8af;
   background-color: #fafafa !important;
-  border-color: gray #fff #fff !important;
-  border-top-right-radius: .0rem !important;
-  border-top-left-radius: .0rem !important;
   font-size: 12px;
   font-weight: 600;
 }
@@ -248,9 +251,6 @@ body{
 .nav-link-2 {
   color: #a2a8af;
   background-color: #fafafa !important;
-  border-color: #fff #fff #fff !important;
-  border-top-right-radius: .0rem !important;
-  border-top-left-radius: .0rem !important;
   font-size: 12px;
   font-weight: 600;
 }
@@ -259,6 +259,7 @@ body{
 .card {
   border: 0px solid rgba(0,0,0,.125) !important;
   border-radius: .0rem !important;
+ 
 }
 
 .card .card-img, .card-img-top {
@@ -266,11 +267,6 @@ body{
   border-top-right-radius: 0rem !important;
 }
 
-.stories{
-  text-align: center;
-  font-size: 15px;
-  font-weight: 600;
-}
 
 .form-control {
   border-radius: .15rem !important;
@@ -295,4 +291,39 @@ body{
 .btn {
   padding: .100rem .50rem !important;
 }
+
+
+/*widgets*/
+
+.barraPesquisar{
+  justify-content: flex-end;
+  right:-43rem;
+  top: -814px;
+ 
+
+  
+}
+
+.barraPesquisar-input{
+  display: flex;
+  align-items: flex-end;
+  background-color: #f7f7f7;
+  width: 35%;
+  border-radius: 15px;
+  padding: 10px;
+
+}
+
+.inputPesquisar{
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  border: none;
+
+}
+
+.widgets__serarchIcon{
+  color: gray;
+}
+
+
 
