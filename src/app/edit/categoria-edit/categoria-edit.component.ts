@@ -41,7 +41,7 @@ export class CategoriaEditComponent implements OnInit {
     this.categoriaService.putCategoria(this.categoria).subscribe((resp: Categoria)=>{
       this.categoria = resp
       this.alertas.showAlertSuccess("Categoria atualizada!")
-      this.router.navigate(["/categoria"])
+      this.router.navigate(["/inicio"])
     })
   }
 
